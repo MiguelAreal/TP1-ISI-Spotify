@@ -1,0 +1,270 @@
+[
+    {
+        "id": "bf283ad4cf60086f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bfc880c45abbde98",
+        "type": "sqlitedb",
+        "db": "C:\\Users\\miguelareal\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
+        "mode": "RO"
+    },
+    {
+        "id": "016c25323c6a9ebe",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "ce31318209e8312f",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#008040",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "53d75b9b07c94b8c",
+        "type": "ui-page",
+        "name": "Dashboard",
+        "ui": "016c25323c6a9ebe",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "ce31318209e8312f",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "bb3ec38dd8362023",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "53d75b9b07c94b8c",
+        "width": "10",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ba9d94c4931f4bc0",
+        "type": "sqlite",
+        "z": "bf283ad4cf60086f",
+        "mydb": "bfc880c45abbde98",
+        "sqlquery": "msg.topic",
+        "sql": "SELECT name, popularity FROM artists ORDER BY popularity DESC;",
+        "name": "TP1-ISI-Spotify-DB",
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "7ac43b633bf44276"
+            ]
+        ],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "1f68a7ba36e22b2d",
+        "type": "inject",
+        "z": "bf283ad4cf60086f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT name, popularity FROM artists order by popularity desc",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "ba9d94c4931f4bc0"
+            ]
+        ]
+    },
+    {
+        "id": "7ac43b633bf44276",
+        "type": "ui-table",
+        "z": "bf283ad4cf60086f",
+        "group": "bb3ec38dd8362023",
+        "name": "",
+        "label": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "Nome",
+                "key": "name",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Popularidade",
+                "key": "popularity",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 730,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39233bef12e4151d",
+        "type": "ui-dropdown",
+        "z": "bf283ad4cf60086f",
+        "group": "bb3ec38dd8362023",
+        "name": "Filtros",
+        "label": "Filtros",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Artistas",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Álbums",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Géneros Músicais",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "e29af8a1174c7db8"
+            ]
+        ]
+    },
+    {
+        "id": "e29af8a1174c7db8",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "mudar_dropdown",
+        "func": "let query = String;\n\nswitch (msg.payload) {\n    case 0:\n        query = \"SELECT ROW_NUMBER() OVER (ORDER BY popularity DESC) AS rank,\"+\n        \"name,popularity FROM artists \"+\n        \"ORDER BY popularity DESC\";\n        break;\n    case 1:\n        query = \"SELECT ROW_NUMBER() OVER (ORDER BY popularity DESC) AS rank,\"+\n        \"name,popularity FROM albums \"+\n        \"ORDER BY popularity DESC\";\n        break;\n    case 2:\n        query = \"SELECT g.genre AS genre_name,\"+\n        \" ROUND(AVG(t.popularity), 2) AS avg_popularity,\"+\n        \" RANK() OVER (ORDER BY AVG(t.popularity) DESC) AS ranking\"+\n        \" FROM tracks t JOIN albums a ON t.album_id = a.id\"+\n        \" JOIN artists ar ON a.artist_id= ar.id\"+\n        \" JOIN artist_genres g ON ar.id = g.id\"+\n        \" WHERE t.popularity IS NOT NULL GROUP BY g.genre\"+\n        \" ORDER BY avg_popularity DESC\";\n        break;\n        \n}\nmsg.topic = query;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 360,
+        "wires": [
+            [
+                "ba9d94c4931f4bc0"
+            ]
+        ]
+    },
+    {
+        "id": "0e54332d3cc9f9d2",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-node-sqlite": "1.1.1",
+            "@flowfuse/node-red-dashboard": "1.29.0"
+        }
+    }
+]

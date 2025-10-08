@@ -16,7 +16,7 @@
         </config>
         <config key="sqlite-connection">
             <entry key="location" type="xstring" value="FILE"/>
-            <entry key="path" type="xstring" value="C:\Users\Areal\Documents\GitHub\TP1-ISI-Spotify\data\output\TP1-ISI-Spotify.db"/>
+            <entry key="path" type="xstring" value="C:\Users\miguelareal\Documents\GitHub\TP1-ISI-Spotify\data\output\TP1-ISI-Spotify.db"/>
             <entry key="in_memory_database_name" type="xstring" value="temporary"/>
         </config>
         <config key="external_to_knime_mapping_Internals">
@@ -939,7 +939,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBSessionPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBSessionPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="SQLite fda93a0c-e734-4fa0-b2c4-56a555c26256"/>
+            <entry key="port_object_summary" type="xstring" value="SQLite 563b382e-f1a2-4c46-b508-b8d060a39e78"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -947,6 +947,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="8ad31c5d-fd1b-479a-967d-0f7e565e69e5"/>
+        <entry key="file_store_id" type="xstring" value="a4e6b23f-b989-44dc-93e7-27e840342568"/>
     </config>
 </config>
