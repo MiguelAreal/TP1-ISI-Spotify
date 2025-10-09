@@ -45,10 +45,10 @@
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.credentials.base.oauth"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-bundle-version" type="xstring" value="5.6.0.v202507231537"/>
-    <entry key="node-feature-name" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-version" type="xstring" value="0.0.0"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Basic Authentication nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.credentials.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.6.0.v202507231537"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="OAuth2 Authenticator (Client Credentials)"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -66,6 +66,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="4d59fd1e-de85-4779-89ac-defa601c115c"/>
+        <entry key="file_store_id" type="xstring" value="266e7830-d9a9-41b3-9ffd-f6dada3673f0"/>
     </config>
 </config>

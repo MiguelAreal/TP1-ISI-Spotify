@@ -2,10 +2,10 @@
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="db_session">
     <config key="Session Info">
         <entry key="version" type="xint" value="7"/>
-        <entry key="sessionID" type="xstring" value="563b382e-f1a2-4c46-b508-b8d060a39e78"/>
+        <entry key="sessionID" type="xstring" value="b3c0ad50-6b86-4b9e-ac12-001d59594a8f"/>
         <entry key="dbTypeId" type="xstring" value="sqlite"/>
         <entry key="dialectId" type="xstring" value="sqlite"/>
-        <entry key="dbURL" type="xstring" value="jdbc:sqlite:C:\Users\miguelareal\Documents\GitHub\TP1-ISI-Spotify\data\output\TP1-ISI-Spotify.db"/>
+        <entry key="dbURL" type="xstring" value="jdbc:sqlite:C:\Users\Areal\Documents\GitHub\TP1-ISI-Spotify\data\output\TP1-ISI-Spotify.db"/>
     </config>
     <config key="Driver Definition">
         <entry key="driverId" type="xstring" value="built-in-sqlite-3.45.2.0"/>

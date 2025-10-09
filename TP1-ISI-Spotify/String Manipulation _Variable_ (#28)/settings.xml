@@ -6,7 +6,7 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="artist_search_url"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="https://api.spotify.com/v1/search?q=Shawn%20Mendes&amp;type=artist"/>
+            <entry key="value" type="xstring" value="https://api.spotify.com/v1/search?q=Bastille&amp;type=artist"/>
         </config>
     </config>
     <config key="internal_node_subsettings">

@@ -10,13 +10,13 @@
         </config>
         <config key="Variable_1">
             <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="Count(id)"/>
+            <entry key="name" type="xstring" value="Unique count(id)"/>
             <entry key="class" type="xstring" value="INTEGER"/>
             <entry key="value" type="xint" value="0"/>
         </config>
         <config key="Variable_2">
             <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="Concatenate(name)"/>
+            <entry key="name" type="xstring" value="Unique concatenate(name)"/>
             <entry key="class" type="xstring" value="STRING"/>
             <entry key="value" type="xstring" value="missing"/>
         </config>
@@ -28,15 +28,15 @@
         </config>
         <config key="Variable_4">
             <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="Count(id)"/>
+            <entry key="name" type="xstring" value="Unique count(id)"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="10"/>
+            <entry key="value" type="xint" value="34"/>
         </config>
         <config key="Variable_5">
             <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="Concatenate(name)"/>
+            <entry key="name" type="xstring" value="Unique concatenate(name)"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="Ed Sheeran&lt;br&gt;Maroon 5&lt;br&gt;Zara Larsson&lt;br&gt;The Chainsmokers&lt;br&gt;Lewis Capaldi&lt;br&gt;Ed Sheeran&lt;br&gt;Katy Perry&lt;br&gt;Sam Feldt&lt;br&gt;Avicii&lt;br&gt;Shawn Mendes"/>
+            <entry key="value" type="xstring" value="Ed Sheeran&lt;br&gt;Maroon 5&lt;br&gt;Zara Larsson&lt;br&gt;The Chainsmokers&lt;br&gt;Lewis Capaldi&lt;br&gt;Katy Perry&lt;br&gt;Sam Feldt&lt;br&gt;Avicii&lt;br&gt;Shawn Mendes&lt;br&gt;Ellie Goulding&lt;br&gt;Loud Luxury&lt;br&gt;Martin Garrix&lt;br&gt;AJ Mitchell&lt;br&gt;David Guetta&lt;br&gt;Sam Smith&lt;br&gt;Steve Aoki&lt;br&gt;R3HAB&lt;br&gt;Marshmello&lt;br&gt;Ava Max&lt;br&gt;Nikki Vianna&lt;br&gt;Charlie Puth&lt;br&gt;Starley&lt;br&gt;James Arthur&lt;br&gt;Max Dean&lt;br&gt;ILLENIUM&lt;br&gt;Bazzi vs.&lt;br&gt;Charli xcx&lt;br&gt;Kygo&lt;br&gt;Armin van Buuren&lt;br&gt;Billie Eilish&lt;br&gt;Sia&lt;br&gt;Sean Paul&lt;br&gt;Estelle&lt;br&gt;Bastille"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
@@ -47,7 +47,7 @@
             <entry key="filter-type" type="xstring" value="STANDARD"/>
             <config key="included_names">
                 <entry key="array-size" type="xint" value="2"/>
-                <entry key="0" type="xstring" value="Concatenate(name)"/>
+                <entry key="0" type="xstring" value="Unique concatenate(name)"/>
                 <entry key="1" type="xstring" value="Count(id)"/>
             </config>
             <config key="excluded_names">
@@ -99,10 +99,10 @@
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-bundle-version" type="xstring" value="5.7.0.v202508280756"/>
-    <entry key="node-feature-name" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
-    <entry key="node-feature-version" type="xstring" value="0.0.0"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.7.0.v202508280756"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Table Row to Variable"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -120,6 +120,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="96465cba-eea9-452e-a7f2-b89bea83be0a"/>
+        <entry key="file_store_id" type="xstring" value="64939a20-8c76-428b-8bdf-89cdae4a9df8"/>
     </config>
 </config>

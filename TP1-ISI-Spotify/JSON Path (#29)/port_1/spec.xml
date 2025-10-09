@@ -63,7 +63,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="7n2wHs1TKAczGzO7Dd2rGr"/>
+                        <entry key="StringCell" type="xstring" value="7EQ0qTo7fWT7DPxmxtSYEc"/>
                     </config>
                 </config>
             </config>
@@ -85,7 +85,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="Shawn Mendes"/>
+                        <entry key="StringCell" type="xstring" value="Bastille"/>
                     </config>
                 </config>
             </config>
@@ -107,7 +107,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="82"/>
+                        <entry key="StringCell" type="xstring" value="73"/>
                     </config>
                 </config>
             </config>
@@ -127,13 +127,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
                 <config key="org.knime.core.data.def.IntCell">
-                    <entry key="IntCell" type="xint" value="45602270"/>
+                    <entry key="IntCell" type="xint" value="5639176"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
                 <config key="org.knime.core.data.def.IntCell">
-                    <entry key="IntCell" type="xint" value="45602270"/>
+                    <entry key="IntCell" type="xint" value="5639176"/>
                 </config>
             </config>
         </config>
@@ -169,7 +169,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="https://i.scdn.co/image/ab6761610000e5eb58b4b9419486550f6fda0535"/>
+                        <entry key="StringCell" type="xstring" value="https://i.scdn.co/image/ab6761610000e5ebfd9a45e98090b4f26d2bbdeb"/>
                     </config>
                 </config>
             </config>

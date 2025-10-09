@@ -20,15 +20,6 @@
                 <entry key="login" type="xstring" value="a29559@alunos.ipca.pt"/>
             </config>
         </config>
-        <config key="Variable_2">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="email_credentials"/>
-            <entry key="class" type="xstring" value="CREDENTIALS"/>
-            <config key="value">
-                <entry key="name" type="xstring" value="email_credentials"/>
-                <entry key="login" type="xstring" value="a29559@alunos.ipca.pt"/>
-            </config>
-        </config>
     </config>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
@@ -100,6 +91,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="77528497-dd2b-49c9-88b7-4eb0c6ea1d04"/>
+        <entry key="file_store_id" type="xstring" value="cfde6126-371c-4c5a-94a2-1030e6bd6445"/>
     </config>
 </config>

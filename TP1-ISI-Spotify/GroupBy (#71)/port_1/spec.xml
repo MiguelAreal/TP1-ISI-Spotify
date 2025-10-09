@@ -3,7 +3,7 @@
     <entry key="spec_name" type="xstring" value="default"/>
     <entry key="number_columns" type="xint" value="2"/>
     <config key="column_spec_0">
-        <entry key="column_name" type="xstring" value="Concatenate(name)"/>
+        <entry key="column_name" type="xstring" value="Unique concatenate(name)"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
         </config>
@@ -16,7 +16,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="Ed Sheeran&lt;br&gt;Maroon 5&lt;br&gt;Zara Larsson&lt;br&gt;The Chainsmokers&lt;br&gt;Lewis Capaldi&lt;br&gt;Ed Sheeran&lt;br&gt;Katy Perry&lt;br&gt;Sam Feldt&lt;br&gt;Avicii&lt;br&gt;Shawn Mendes"/>
+                        <entry key="StringCell" type="xstring" value="Ed Sheeran&lt;br&gt;Maroon 5&lt;br&gt;Zara Larsson&lt;br&gt;The Chainsmokers&lt;br&gt;Lewis Capaldi&lt;br&gt;Katy Perry&lt;br&gt;Sam Feldt&lt;br&gt;Avicii&lt;br&gt;Shawn Mendes&lt;br&gt;Ellie Goulding&lt;br&gt;Loud Luxury&lt;br&gt;Martin Garrix&lt;br&gt;AJ Mitchell&lt;br&gt;David Guetta&lt;br&gt;Sam Smith&lt;br&gt;Steve Aoki&lt;br&gt;R3HAB&lt;br&gt;Marshmello&lt;br&gt;Ava Max&lt;br&gt;Nikki Vianna&lt;br&gt;Charlie Puth&lt;br&gt;Starley&lt;br&gt;James Arthur&lt;br&gt;Max Dean&lt;br&gt;ILLENIUM&lt;br&gt;Bazzi vs.&lt;br&gt;Charli xcx&lt;br&gt;Kygo&lt;br&gt;Armin van Buuren&lt;br&gt;Billie Eilish&lt;br&gt;Sia&lt;br&gt;Sean Paul&lt;br&gt;Estelle&lt;br&gt;Bastille"/>
                     </config>
                 </config>
             </config>
@@ -25,7 +25,7 @@
         <config key="meta_data"/>
     </config>
     <config key="column_spec_1">
-        <entry key="column_name" type="xstring" value="Count(id)"/>
+        <entry key="column_name" type="xstring" value="Unique count(id)"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
         </config>
@@ -36,13 +36,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
                 <config key="org.knime.core.data.def.IntCell">
-                    <entry key="IntCell" type="xint" value="10"/>
+                    <entry key="IntCell" type="xint" value="34"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
                 <config key="org.knime.core.data.def.IntCell">
-                    <entry key="IntCell" type="xint" value="10"/>
+                    <entry key="IntCell" type="xint" value="34"/>
                 </config>
             </config>
         </config>

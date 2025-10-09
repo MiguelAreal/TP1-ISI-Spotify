@@ -16,7 +16,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="7n2wHs1TKAczGzO7Dd2rGr"/>
+                        <entry key="StringCell" type="xstring" value="7EQ0qTo7fWT7DPxmxtSYEc"/>
                     </config>
                 </config>
             </config>
@@ -38,7 +38,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="Shawn Mendes"/>
+                        <entry key="StringCell" type="xstring" value="Bastille"/>
                     </config>
                 </config>
             </config>

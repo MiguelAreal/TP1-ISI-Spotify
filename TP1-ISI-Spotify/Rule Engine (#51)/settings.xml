@@ -8,12 +8,12 @@
     <config key="model">
         <config key="rules">
             <entry key="array-size" type="xint" value="3"/>
-            <entry key="0" type="xstring" value="MISSING $artist_genres$ =&gt; &quot;N/A&quot;"/>
-            <entry key="1" type="xstring" value="$artist_genres$ = &quot;[]&quot; =&gt; &quot;N/A&quot;"/>
-            <entry key="2" type="xstring" value="TRUE =&gt; $artist_genres$%%00009"/>
+            <entry key="0" type="xstring" value="MISSING $artist_genres_SplitResultList$ =&gt; &quot;N/A&quot;"/>
+            <entry key="1" type="xstring" value="$artist_genres_SplitResultList$ = &quot;[]&quot; =&gt; &quot;N/A&quot;"/>
+            <entry key="2" type="xstring" value="TRUE =&gt; $artist_genres_SplitResultList$%%00009"/>
         </config>
         <entry key="new-column-name" type="xstring" value="prediction"/>
-        <entry key="replace-column-name" type="xstring" value="artist_genres"/>
+        <entry key="replace-column-name" type="xstring" value="artist_genres_SplitResultList"/>
         <entry key="append-column" type="xboolean" value="false"/>
         <entry key="disallowLongOutputForCompatibility" type="xboolean" value="false"/>
     </config>
@@ -34,6 +34,10 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Node created an empty data table."/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.rules.engine.RuleEngineNodeFactory"/>
     <entry key="node-name" type="xstring" value="Rule Engine"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
@@ -53,7 +57,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 2"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 2"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
