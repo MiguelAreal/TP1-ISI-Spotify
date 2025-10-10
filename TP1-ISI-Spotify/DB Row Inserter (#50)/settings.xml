@@ -89,7 +89,7 @@
     <entry key="state" type="xstring" value="EXECUTED"/>
     <config key="nodecontainer_message">
         <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Node created an empty data table."/>
+        <entry key="message" type="xstring" value="Error during preparation"/>
     </config>
     <entry key="factory" type="xstring" value="org.knime.database.node.io.insert2.DBInsert2NodeFactory"/>
     <entry key="node-name" type="xstring" value="DB Row Inserter"/>
@@ -110,14 +110,14 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 2"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 3, Cols: 2"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBDataPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBDataPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="SQLite b3c0ad50-6b86-4b9e-ac12-001d59594a8f"/>
+            <entry key="port_object_summary" type="xstring" value="SQLite fa87b8f5-9480-420a-9c3e-ffe781decbe8"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>

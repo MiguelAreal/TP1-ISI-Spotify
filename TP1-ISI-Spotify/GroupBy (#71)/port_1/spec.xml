@@ -16,7 +16,7 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="Ed Sheeran&lt;br&gt;Maroon 5&lt;br&gt;Zara Larsson&lt;br&gt;The Chainsmokers&lt;br&gt;Lewis Capaldi&lt;br&gt;Katy Perry&lt;br&gt;Sam Feldt&lt;br&gt;Avicii&lt;br&gt;Shawn Mendes&lt;br&gt;Ellie Goulding&lt;br&gt;Loud Luxury&lt;br&gt;Martin Garrix&lt;br&gt;AJ Mitchell&lt;br&gt;David Guetta&lt;br&gt;Sam Smith&lt;br&gt;Steve Aoki&lt;br&gt;R3HAB&lt;br&gt;Marshmello&lt;br&gt;Ava Max&lt;br&gt;Nikki Vianna&lt;br&gt;Charlie Puth&lt;br&gt;Starley&lt;br&gt;James Arthur&lt;br&gt;Max Dean&lt;br&gt;ILLENIUM&lt;br&gt;Bazzi vs.&lt;br&gt;Charli xcx&lt;br&gt;Kygo&lt;br&gt;Armin van Buuren&lt;br&gt;Billie Eilish&lt;br&gt;Sia&lt;br&gt;Sean Paul&lt;br&gt;Estelle&lt;br&gt;Bastille"/>
+                        <entry key="StringCell" type="xstring" value="Ed Sheeran&lt;br&gt;Maroon 5&lt;br&gt;Zara Larsson&lt;br&gt;The Chainsmokers&lt;br&gt;Lewis Capaldi&lt;br&gt;Katy Perry&lt;br&gt;Sam Feldt&lt;br&gt;Avicii&lt;br&gt;Shawn Mendes&lt;br&gt;Ellie Goulding&lt;br&gt;Loud Luxury&lt;br&gt;Martin Garrix&lt;br&gt;AJ Mitchell&lt;br&gt;David Guetta&lt;br&gt;Sam Smith&lt;br&gt;Steve Aoki&lt;br&gt;R3HAB&lt;br&gt;Marshmello&lt;br&gt;Ava Max&lt;br&gt;Nikki Vianna&lt;br&gt;Charlie Puth&lt;br&gt;Starley&lt;br&gt;James Arthur&lt;br&gt;MAX&lt;br&gt;ILLENIUM&lt;br&gt;Bazzi vs.&lt;br&gt;Charli xcx&lt;br&gt;Kygo&lt;br&gt;Armin van Buuren&lt;br&gt;Billie Eilish&lt;br&gt;Sia&lt;br&gt;Sean Paul&lt;br&gt;Estelle&lt;br&gt;Bastille&lt;br&gt;for KING &amp; COUNTRY&lt;br&gt;Lil Nas X&lt;br&gt;Calvin Harris&lt;br&gt;Why Don't We&lt;br&gt;Olympis&lt;br&gt;DJ Snake&lt;br&gt;Smash Mouth&lt;br&gt;SHAED&lt;br&gt;Kaskade&lt;br&gt;GASHI&lt;br&gt;Khalid&lt;br&gt;Herve Pagez&lt;br&gt;Mark Ronson&lt;br&gt;Arlissa&lt;br&gt;5 Seconds of Summer&lt;br&gt;Gryffin&lt;br&gt;NOTD&lt;br&gt;Jonas Blue&lt;br&gt;3LAU&lt;br&gt;Jax Jones&lt;br&gt;Zedd"/>
                     </config>
                 </config>
             </config>
@@ -36,13 +36,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
                 <config key="org.knime.core.data.def.IntCell">
-                    <entry key="IntCell" type="xint" value="34"/>
+                    <entry key="IntCell" type="xint" value="55"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
                 <config key="org.knime.core.data.def.IntCell">
-                    <entry key="IntCell" type="xint" value="34"/>
+                    <entry key="IntCell" type="xint" value="55"/>
                 </config>
             </config>
         </config>

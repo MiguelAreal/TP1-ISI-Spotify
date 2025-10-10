@@ -162,91 +162,91 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="maxIterations"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="50"/>
+            <entry key="value" type="xint" value="100"/>
         </config>
         <config key="Variable_28">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="currentIteration"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="49"/>
+            <entry key="value" type="xint" value="99"/>
         </config>
         <config key="Variable_29">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="RowID"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="08rBIlTMXlF5uEHobZglxv"/>
+            <entry key="value" type="xstring" value="6pooRNiLyYpxZeIA5kJ5EX"/>
         </config>
         <config key="Variable_30">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="duration_ms"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="166237"/>
+            <entry key="value" type="xint" value="216668"/>
         </config>
         <config key="Variable_31">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="tempo"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="123.951"/>
+            <entry key="value" type="xdouble" value="144.033"/>
         </config>
         <config key="Variable_32">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="valence"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.479"/>
+            <entry key="value" type="xdouble" value="0.442"/>
         </config>
         <config key="Variable_33">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="liveness"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.109"/>
+            <entry key="value" type="xdouble" value="0.118"/>
         </config>
         <config key="Variable_34">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="instrumentalness"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.0083"/>
+            <entry key="value" type="xdouble" value="0.0"/>
         </config>
         <config key="Variable_35">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="acousticness"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.0832"/>
+            <entry key="value" type="xdouble" value="0.0128"/>
         </config>
         <config key="Variable_36">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="speechiness"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.0585"/>
+            <entry key="value" type="xdouble" value="0.0318"/>
         </config>
         <config key="Variable_37">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="mode"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="0"/>
+            <entry key="value" type="xint" value="1"/>
         </config>
         <config key="Variable_38">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="loudness"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="-3.318"/>
+            <entry key="value" type="xdouble" value="-5.453"/>
         </config>
         <config key="Variable_39">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="key"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="4"/>
+            <entry key="value" type="xint" value="2"/>
         </config>
         <config key="Variable_40">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="energy"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.992"/>
+            <entry key="value" type="xdouble" value="0.594"/>
         </config>
         <config key="Variable_41">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="danceability"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.64"/>
+            <entry key="value" type="xdouble" value="0.643"/>
         </config>
         <config key="Variable_42">
             <entry key="type" type="xstring" value="variable"/>
@@ -264,49 +264,49 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="playlist_id"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="37i9dQZF1DXcZDD7cfEKhW"/>
+            <entry key="value" type="xstring" value="37i9dQZF1DWZQaaqNMbbXa"/>
         </config>
         <config key="Variable_45">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="playlist_name"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="Pop Remix"/>
+            <entry key="value" type="xstring" value="Dance Pop"/>
         </config>
         <config key="Variable_46">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="track_album_release_date"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="2019-09-27"/>
+            <entry key="value" type="xstring" value="2019-05-13"/>
         </config>
         <config key="Variable_47">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="track_album_name"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="Million Pieces (M-22 Remix)"/>
+            <entry key="value" type="xstring" value="Good Things Fall Apart (with Jon Bellion)"/>
         </config>
         <config key="Variable_48">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="track_album_id"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="4lzn3ikjb2HPZM6U6Y1IRL"/>
+            <entry key="value" type="xstring" value="4IYvXJnU8zPRzPPTu4dJUl"/>
         </config>
         <config key="Variable_49">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="track_popularity"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="53"/>
+            <entry key="value" type="xint" value="74"/>
         </config>
         <config key="Variable_50">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="track_artist"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="Bastille"/>
+            <entry key="value" type="xstring" value="ILLENIUM"/>
         </config>
         <config key="Variable_51">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="track_name"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="Million Pieces - M-22 Remix"/>
+            <entry key="value" type="xstring" value="Good Things Fall Apart (with Jon Bellion)"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
@@ -389,10 +389,10 @@
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-bundle-version" type="xstring" value="5.7.0.v202508280756"/>
-    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
-    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
-    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.7.0.v202508280756"/>
+    <entry key="node-feature-name" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-version" type="xstring" value="0.0.0"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Table Row to Variable Loop Start"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -410,6 +410,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="e5765247-bc79-43e4-9f61-dc0653335ff9"/>
+        <entry key="file_store_id" type="xstring" value="17215180-65d4-4d67-93ef-d9b210093810"/>
     </config>
 </config>

@@ -6,14 +6,14 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="artist_search_url"/>
             <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="https://api.spotify.com/v1/search?q=Bastille&amp;type=artist"/>
+            <entry key="value" type="xstring" value="https://api.spotify.com/v1/search?q=ILLENIUM&amp;type=artist&amp;limit=1"/>
         </config>
     </config>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="expression" type="xstring" value="join(&quot;https://api.spotify.com/v1/search?q=&quot;,regexReplace($${Strack_artist}$$,&quot; &quot;,&quot;%20&quot;),&quot;&amp;type=artist&quot;)"/>
+        <entry key="expression" type="xstring" value="join(&quot;https://api.spotify.com/v1/search?q=&quot;,regexReplace($${Strack_artist}$$,&quot; &quot;,&quot;%20&quot;),&quot;&amp;type=artist&amp;limit=1&quot;)"/>
         <entry key="replaced_column" type="xstring" value="artist_search_url"/>
         <entry key="append_column" type="xboolean" value="false"/>
         <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>

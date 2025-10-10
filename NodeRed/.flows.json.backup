@@ -57,7 +57,7 @@
         "type": "ui-page",
         "name": "Popularidade de artistas e álbums",
         "ui": "016c25323c6a9ebe",
-        "path": "/page1",
+        "path": "/page2",
         "icon": "home",
         "layout": "grid",
         "theme": "ce31318209e8312f",
@@ -83,7 +83,7 @@
                 "cols": "12"
             }
         ],
-        "order": 1,
+        "order": 2,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -227,7 +227,7 @@
         "type": "ui-page",
         "name": "Estatísticas de Géneros Musicais",
         "ui": "016c25323c6a9ebe",
-        "path": "/page2",
+        "path": "/page3",
         "icon": "home",
         "layout": "grid",
         "theme": "ce31318209e8312f",
@@ -253,7 +253,7 @@
                 "cols": "12"
             }
         ],
-        "order": 2,
+        "order": 3,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -312,6 +312,134 @@
         "groupType": "default"
     },
     {
+        "id": "a48eeb7778e046c6",
+        "type": "ui-page",
+        "name": "Artistas, álbuns e músicas",
+        "ui": "016c25323c6a9ebe",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "ce31318209e8312f",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d6b9849b1523bbd4",
+        "type": "ui-group",
+        "name": "Group Artistas",
+        "page": "a48eeb7778e046c6",
+        "width": "4",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ab0f4d3228b4e7a1",
+        "type": "ui-group",
+        "name": "Group Albuns",
+        "page": "a48eeb7778e046c6",
+        "width": "4",
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "a4bf936feb75172a",
+        "type": "ui-group",
+        "name": "Group Músicas",
+        "page": "a48eeb7778e046c6",
+        "width": "4",
+        "height": 1,
+        "order": 3,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "424023ef7054c83f",
+        "type": "ui-page",
+        "name": "Estatísticas de Músicas",
+        "ui": "016c25323c6a9ebe",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "ce31318209e8312f",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "fa434e8df39d1e36",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "424023ef7054c83f",
+        "width": "5",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
         "id": "ba9d94c4931f4bc0",
         "type": "sqlite",
         "z": "bf283ad4cf60086f",
@@ -319,8 +447,8 @@
         "sqlquery": "msg.topic",
         "sql": "SELECT name, popularity FROM artists ORDER BY popularity DESC;",
         "name": "TP1-ISI-Spotify-DB",
-        "x": 1350,
-        "y": 120,
+        "x": 1370,
+        "y": 500,
         "wires": [
             [
                 "7ac43b633bf44276"
@@ -332,15 +460,21 @@
         "id": "1f68a7ba36e22b2d",
         "type": "inject",
         "z": "bf283ad4cf60086f",
-        "name": "",
-        "props": [],
-        "repeat": "60",
+        "name": "Default Dropdown",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 270,
-        "y": 220,
+        "payload": "artistas",
+        "payloadType": "str",
+        "x": 210,
+        "y": 380,
         "wires": [
             [
                 "c7161e08edbd3021"
@@ -393,13 +527,12 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 1570,
-        "y": 120,
+        "x": 1590,
+        "y": 500,
         "wires": [
             [
                 "35d47b9c612bb024",
-                "b602a70adc13b3fc",
-                "24e20323394abef5"
+                "b602a70adc13b3fc"
             ]
         ]
     },
@@ -414,7 +547,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "passthru": true,
+        "passthru": false,
         "multiple": false,
         "chips": false,
         "clearable": false,
@@ -436,8 +569,8 @@
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onChange",
-        "x": 850,
-        "y": 120,
+        "x": 870,
+        "y": 500,
         "wires": [
             [
                 "e29af8a1174c7db8",
@@ -450,15 +583,15 @@
         "type": "function",
         "z": "bf283ad4cf60086f",
         "name": "mudar_dropdown",
-        "func": "let queries = flow.get(\"queries\");\nlet key = msg.payload.toString();\n\nlet query = queries[key];\nmsg.topic = query;\n\nreturn msg;\n",
+        "func": "let queries = flow.get(\"queries\");\nlet key = msg.payload;\n\nlet query = queries[key];\nmsg.topic = query;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1110,
-        "y": 120,
+        "x": 1130,
+        "y": 500,
         "wires": [
             [
                 "ba9d94c4931f4bc0"
@@ -477,13 +610,6 @@
                 "pt": "flow",
                 "to": "{\"artistas\":\"SELECT id, ROW_NUMBER() OVER (ORDER BY popularity DESC) as rank, name, popularity, image_url, followers FROM artists ORDER BY popularity DESC\",\"albuns\":\"SELECT a.id, ROW_NUMBER() OVER (ORDER BY a.popularity DESC) as rank, a.name, a.popularity, a.image_url, b.name as artist_name FROM albums a JOIN artists b on a.artist_id = b.id ORDER BY a.popularity DESC\"}",
                 "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "artistas",
-                "tot": "str"
             }
         ],
         "action": "",
@@ -491,14 +617,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 220,
+        "x": 420,
+        "y": 440,
         "wires": [
             [
+                "39233bef12e4151d",
                 "21d86c0afc4ac349",
                 "d672038945b865c2",
-                "39233bef12e4151d",
-                "5c89b1c602ae797e"
+                "5c89b1c602ae797e",
+                "0a8476ece5f1a790",
+                "59223c9a3a9696b4",
+                "dbc4072cbda469e6",
+                "d7e241ef3ef3d718"
             ]
         ]
     },
@@ -514,8 +644,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1810,
-        "y": 200,
+        "x": 1830,
+        "y": 580,
         "wires": [
             [
                 "be530d14a491ec68"
@@ -540,8 +670,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2100,
-        "y": 200,
+        "x": 2120,
+        "y": 580,
         "wires": [
             []
         ]
@@ -566,8 +696,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 2090,
-        "y": 120,
+        "x": 2110,
+        "y": 500,
         "wires": []
     },
     {
@@ -582,8 +712,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1840,
-        "y": 120,
+        "x": 1860,
+        "y": 500,
         "wires": [
             [
                 "b678a7a42126b706"
@@ -599,7 +729,7 @@
         "sql": "SELECT g.genre,\nROUND(AVG(t.popularity),2) as avg_popularity\nFROM tracks t JOIN\nalbums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY AVG(t.popularity) DESC\nLIMIT 10",
         "name": "Popularidade de Géneros",
         "x": 850,
-        "y": 660,
+        "y": 780,
         "wires": [
             [
                 "c28dabe1624baf38"
@@ -664,7 +794,7 @@
         "className": "",
         "interpolation": "linear",
         "x": 1200,
-        "y": 660,
+        "y": 780,
         "wires": [
             []
         ]
@@ -726,7 +856,7 @@
         "className": "",
         "interpolation": "linear",
         "x": 2160,
-        "y": 760,
+        "y": 880,
         "wires": [
             []
         ]
@@ -740,7 +870,7 @@
         "sql": "SELECT DISTINCT genre FROM artist_genres ORDER BY genre;",
         "name": "Buscar Todos os Géneros",
         "x": 850,
-        "y": 760,
+        "y": 880,
         "wires": [
             [
                 "cc250ff0cb4b3da2"
@@ -761,7 +891,7 @@
         "finalize": "",
         "libs": [],
         "x": 1100,
-        "y": 760,
+        "y": 880,
         "wires": [
             [
                 "bc2d850805c8aecf"
@@ -797,7 +927,7 @@
         "typeIsComboBox": false,
         "msgTrigger": "onChange",
         "x": 1350,
-        "y": 760,
+        "y": 880,
         "wires": [
             [
                 "5c795fcf987b3e70"
@@ -817,7 +947,7 @@
         "finalize": "",
         "libs": [],
         "x": 1580,
-        "y": 760,
+        "y": 880,
         "wires": [
             [
                 "f9520f394ae0d2d5"
@@ -830,10 +960,10 @@
         "z": "bf283ad4cf60086f",
         "mydb": "bfc880c45abbde98",
         "sqlquery": "fixed",
-        "sql": "SELECT \n  g.genre,\n  COUNT(DISTINCT t.name || '-' || t.album_id || '-' || ar.id) AS track_count,\n  ROUND(AVG(t.popularity),2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY avg_popularity DESC;\n",
+        "sql": "SELECT \n  g.genre,\n  COUNT(t.id) AS track_count,\n  ROUND(AVG(t.popularity),2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY avg_popularity DESC;\n",
         "name": "Popularidade e Volume",
         "x": 850,
-        "y": 860,
+        "y": 980,
         "wires": [
             [
                 "2da2468016b14042"
@@ -850,7 +980,7 @@
         "sql": "SELECT \n  g.genre, \n  strftime('%Y-%m', a.release_date) AS release_month,\n  ROUND(AVG(t.popularity), 2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre, release_month\nORDER BY release_month;",
         "name": "TP1-ISI-Spotify-DB",
         "x": 1810,
-        "y": 760,
+        "y": 880,
         "wires": [
             [
                 "ea97c4892a67cd11"
@@ -915,29 +1045,9 @@
         "className": "",
         "interpolation": "linear",
         "x": 1170,
-        "y": 860,
+        "y": 980,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "24e20323394abef5",
-        "type": "function",
-        "z": "bf283ad4cf60086f",
-        "name": "montar_query",
-        "func": "let dropdownvalue = flow.get(\"dropdownvalue\");\n\nswitch(dropdownvalue){\n    case \"artistas\":\n        msg.topic = \"SELECT AVG(danceability) AS danceability,\"+\n        \"AVG(energy) AS energy,\"+\n        \"AVG(loudness) AS loudness,\"+\n        \"AVG(speechiness) AS speechiness,\"+\n        \"AVG(acousticness) AS acousticness,\"+\n        \"AVG(instrumentalness) AS instrumentalness,\"+\n        \"AVG(liveness) AS liveness,\"+\n        \"AVG(valence) AS valence,\"+\n        \"AVG(tempo) AS tempo,\"+\n        \"AVG(duration_ms) AS duration FROM tracks \"+\n        \"WHERE artist_id = '\"+ msg.payload.id+\"'\";\n    break;\n\n    case \"albums\":\n        msg.topic = msg.payload.artist_id;\n    break;\n}\n\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1800,
-        "y": 300,
-        "wires": [
-            [
-                "18670a97fdf9c45e"
-            ]
         ]
     },
     {
@@ -959,53 +1069,392 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1130,
-        "y": 200,
+        "x": 1150,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a3f135b63f1b094",
+        "type": "inject",
+        "z": "bf283ad4cf60086f",
+        "name": "Update Automático",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 200,
+        "y": 500,
         "wires": [
             [
-                "24e20323394abef5"
+                "c7161e08edbd3021"
             ]
         ]
     },
     {
-        "id": "18670a97fdf9c45e",
+        "id": "0a8476ece5f1a790",
         "type": "sqlite",
         "z": "bf283ad4cf60086f",
         "mydb": "bfc880c45abbde98",
-        "sqlquery": "msg.topic",
-        "sql": "SELECT name, popularity FROM artists ORDER BY popularity DESC;",
-        "name": "TP1-ISI-Spotify-DB",
-        "x": 2110,
-        "y": 300,
+        "sqlquery": "fixed",
+        "sql": "select id, name, followers,image_url from artists\norder by name asc;",
+        "name": "Todos os artistas",
+        "x": 850,
+        "y": 280,
         "wires": [
             [
-                "39bfd783eb11dca5",
-                "cadf0e1b753b60dd"
+                "1f46a70ed1a34926"
             ]
         ],
         "icon": "node-red/db.svg"
     },
     {
-        "id": "c217d917e2a3661a",
+        "id": "1f46a70ed1a34926",
+        "type": "ui-table",
+        "z": "bf283ad4cf60086f",
+        "group": "d6b9849b1523bbd4",
+        "name": "Todos os artistas",
+        "label": "Artistas",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "maxrows": "5",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Nome",
+                "key": "name",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Seguidores",
+                "key": "followers",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 1130,
+        "y": 280,
+        "wires": [
+            [
+                "2f2440bc8c0b6f8e",
+                "86b28a0eb8751f23"
+            ]
+        ]
+    },
+    {
+        "id": "2f2440bc8c0b6f8e",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "gerar_query_albuns",
+        "func": "let artist_id = msg.payload.id;\n\nmsg.topic = \"Select id, name, release_date,image_url from albums where artist_id = '\"+artist_id+\"'\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 280,
+        "wires": [
+            [
+                "e59c659591847048"
+            ]
+        ]
+    },
+    {
+        "id": "e59c659591847048",
+        "type": "sqlite",
+        "z": "bf283ad4cf60086f",
+        "mydb": "bfc880c45abbde98",
+        "sqlquery": "msg.topic",
+        "sql": "select id, name, followers from artists\norder by name asc;",
+        "name": "Albums de artista",
+        "x": 1630,
+        "y": 280,
+        "wires": [
+            [
+                "d26f9267ee312934"
+            ]
+        ],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "d26f9267ee312934",
+        "type": "ui-table",
+        "z": "bf283ad4cf60086f",
+        "group": "ab0f4d3228b4e7a1",
+        "name": "Todos os albuns",
+        "label": "Álbuns",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "maxrows": "5",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Nome",
+                "key": "name",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "Data de lançamento",
+                "key": "release_date",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 1980,
+        "y": 280,
+        "wires": [
+            [
+                "861171ba652da814",
+                "b16f0dc6f58f6d18"
+            ]
+        ]
+    },
+    {
+        "id": "86b28a0eb8751f23",
+        "type": "ui-template",
+        "z": "bf283ad4cf60086f",
+        "group": "d6b9849b1523bbd4",
+        "page": "",
+        "ui": "",
+        "name": "Imagem de artista",
+        "order": 2,
+        "width": "4",
+        "height": "6",
+        "head": "",
+        "format": "<v-card class=\"pa-0\" flat> <v-img v-if=\"msg.payload.image_url\" :src=\"msg.payload.image_url\" contain ></v-img> <v-alert v-else type=\"info\" outlined> Clique numa linha para ver a imagem do artista.</v-alert> </v-card>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1370,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "861171ba652da814",
+        "type": "ui-template",
+        "z": "bf283ad4cf60086f",
+        "group": "ab0f4d3228b4e7a1",
+        "page": "",
+        "ui": "",
+        "name": "Imagem de álbum",
+        "order": 2,
+        "width": "4",
+        "height": "6",
+        "head": "",
+        "format": "<v-card class=\"pa-0\" flat> <v-img v-if=\"msg.payload.image_url\" :src=\"msg.payload.image_url\" contain ></v-img> <v-alert v-else type=\"info\" outlined> Clique numa linha para ver a imagem do álbum.</v-alert> </v-card>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 2210,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b16f0dc6f58f6d18",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "gerar_query_musicas",
+        "func": "let album_id = msg.payload.id;\n\nmsg.topic = \"Select id, name from tracks where album_id = '\"+album_id+\"'\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2220,
+        "y": 280,
+        "wires": [
+            [
+                "48d153029377fcac"
+            ]
+        ]
+    },
+    {
+        "id": "99c4b2719f37348d",
+        "type": "ui-table",
+        "z": "bf283ad4cf60086f",
+        "group": "a4bf936feb75172a",
+        "name": "Todas as músicas",
+        "label": "Músicas do Álbum",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "maxrows": "5",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "click",
+        "columns": [
+            {
+                "title": "Nome",
+                "key": "name",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "ID",
+                "key": "id",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 2690,
+        "y": 280,
+        "wires": [
+            [
+                "4e9c0f88c20e9b34"
+            ]
+        ]
+    },
+    {
+        "id": "d36bc7993714d5bf",
+        "type": "ui-template",
+        "z": "bf283ad4cf60086f",
+        "group": "a4bf936feb75172a",
+        "page": "",
+        "ui": "",
+        "name": "Spotify Widget",
+        "order": 2,
+        "width": "4",
+        "height": "6",
+        "head": "",
+        "format": "<iframe\n  v-if=\"msg.payload\"\n  :src=\"msg.payload\"\n  style=\"border-radius:12px; width:100%; height:100%; border:0; position:absolute; top:0; left:0;\"\n  allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\"\n  allowfullscreen\n  loading=\"lazy\">\n</iframe>\n",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 3120,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e9c0f88c20e9b34",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "montar_url_preview",
+        "func": "msg.payload = \"https://open.spotify.com/embed/track/\" + msg.payload.id + \"?utm_source=generator\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2910,
+        "y": 320,
+        "wires": [
+            [
+                "d36bc7993714d5bf"
+            ]
+        ]
+    },
+    {
+        "id": "48d153029377fcac",
+        "type": "sqlite",
+        "z": "bf283ad4cf60086f",
+        "mydb": "bfc880c45abbde98",
+        "sqlquery": "msg.topic",
+        "sql": "select id, name, followers from artists\norder by name asc;",
+        "name": "Músicas de álbum",
+        "x": 2450,
+        "y": 280,
+        "wires": [
+            [
+                "99c4b2719f37348d"
+            ]
+        ],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "59223c9a3a9696b4",
+        "type": "sqlite",
+        "z": "bf283ad4cf60086f",
+        "mydb": "bfc880c45abbde98",
+        "sqlquery": "fixed",
+        "sql": "SELECT\n  CASE \n    WHEN valence < 0.33 THEN 'Baixa'\n    WHEN valence < 0.66 THEN 'Média'\n    ELSE 'Alta'\n  END AS valence_group,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY valence_group;\n",
+        "name": "Valência das músicas",
+        "x": 840,
+        "y": 1180,
+        "wires": [
+            [
+                "b86a069a54726d41"
+            ]
+        ],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "b85e708c9d160614",
         "type": "ui-chart",
         "z": "bf283ad4cf60086f",
-        "group": "3c0b572e1d5dc8c3",
-        "name": "",
-        "label": "chart",
-        "order": 3,
-        "chartType": "area",
-        "category": "payload",
-        "categoryType": "msg",
-        "xAxisLabel": "",
-        "xAxisProperty": "series",
+        "group": "fa434e8df39d1e36",
+        "name": "Valência das músicas",
+        "label": "Valência Musical (felicidade da música)",
+        "order": 1,
+        "chartType": "doughnut",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "Número de músicas",
+        "xAxisProperty": "label",
         "xAxisPropertyType": "property",
-        "xAxisType": "time",
+        "xAxisType": "radial",
         "xAxisFormat": "",
         "xAxisFormatType": "auto",
         "xmin": "",
         "xmax": "",
-        "yAxisLabel": "",
-        "yAxisProperty": "data",
+        "yAxisLabel": "Popularidade média",
+        "yAxisProperty": "value",
         "yAxisPropertyType": "property",
         "ymin": "",
         "ymax": "",
@@ -1037,52 +1486,212 @@
             "#e5e5e5"
         ],
         "gridColorDefault": true,
-        "width": "4",
-        "height": "6",
+        "width": 6,
+        "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 2510,
-        "y": 300,
+        "x": 1340,
+        "y": 1180,
         "wires": [
             []
         ]
     },
     {
-        "id": "39bfd783eb11dca5",
+        "id": "b86a069a54726d41",
         "type": "function",
         "z": "bf283ad4cf60086f",
-        "name": "function 1",
-        "func": "let row = msg.payload[0];\nlet keys = Object.keys(row);\nlet values = keys.map(k => row[k]);\n\nmsg.payload = {\n    series: keys,\n    data: [values]\n};\n\nreturn msg;\n",
+        "name": "calcular_percentagens",
+        "func": "// Soma todos os valores para calcular percentagens\nlet totalTracks = msg.payload.reduce((sum, row) => sum + row.total, 0);\n\n// Mapeia para o formato do pie chart com label + percentagem\nmsg.payload = msg.payload.map(row => ({\n    label: `${row.valence_group} (${((row.total / totalTracks) * 100).toFixed(1)}%)`,\n    value: row.total\n}));\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2330,
-        "y": 300,
+        "x": 1080,
+        "y": 1180,
         "wires": [
             [
-                "c217d917e2a3661a",
-                "cadf0e1b753b60dd"
+                "b85e708c9d160614"
             ]
         ]
     },
     {
-        "id": "cadf0e1b753b60dd",
-        "type": "debug",
+        "id": "dbc4072cbda469e6",
+        "type": "sqlite",
         "z": "bf283ad4cf60086f",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2520,
-        "y": 380,
-        "wires": []
+        "mydb": "bfc880c45abbde98",
+        "sqlquery": "fixed",
+        "sql": "SELECT\n  CASE WHEN valence > 0.5 THEN 'Feliz' ELSE 'Triste' END AS mood,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY mood;\n",
+        "name": "Mood Musical",
+        "x": 820,
+        "y": 1280,
+        "wires": [
+            [
+                "462909f9683913bc"
+            ]
+        ],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "6c95c65bdd3bb3a5",
+        "type": "ui-chart",
+        "z": "bf283ad4cf60086f",
+        "group": "fa434e8df39d1e36",
+        "name": "Mood Musical",
+        "label": "Mood Musical (Feliz vs Triste)",
+        "order": 2,
+        "chartType": "doughnut",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "Número de músicas",
+        "xAxisProperty": "label",
+        "xAxisPropertyType": "property",
+        "xAxisType": "radial",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Popularidade média",
+        "yAxisProperty": "value",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "replace",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1320,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "462909f9683913bc",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "calcular_percentagens",
+        "func": "// Soma todos os valores para calcular percentagens\nlet totalTracks = msg.payload.reduce((sum, row) => sum + row.total, 0);\n\n// Mapeia para o formato do pie chart com label + percentagem\nmsg.payload = msg.payload.map(row => ({\n    label: `${row.mood} (${((row.total / totalTracks) * 100).toFixed(1)}%)`,\n    value: row.total\n}));\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 1280,
+        "wires": [
+            [
+                "6c95c65bdd3bb3a5"
+            ]
+        ]
+    },
+    {
+        "id": "d7e241ef3ef3d718",
+        "type": "sqlite",
+        "z": "bf283ad4cf60086f",
+        "mydb": "bfc880c45abbde98",
+        "sqlquery": "fixed",
+        "sql": "SELECT \n    SUBSTR(release_date, 1, 7) AS month,\n    AVG(energy) AS avg_energy\nFROM tracks t\nJOIN albums al ON t.album_id = al.id\nGROUP BY month\nORDER BY month;\n",
+        "name": "Tendência de energia ao longo do tempo",
+        "x": 900,
+        "y": 1380,
+        "wires": [
+            [
+                "1dc586b92e591319"
+            ]
+        ],
+        "icon": "node-red/db.svg"
+    },
+    {
+        "id": "1dc586b92e591319",
+        "type": "ui-chart",
+        "z": "bf283ad4cf60086f",
+        "group": "fa434e8df39d1e36",
+        "name": "Tendência de energia ao longo do tempo",
+        "label": "Tendência de energia ao longo do tempo",
+        "order": 3,
+        "chartType": "line",
+        "category": "payload",
+        "categoryType": "msg",
+        "xAxisLabel": "Tempo",
+        "xAxisProperty": "month",
+        "xAxisPropertyType": "property",
+        "xAxisType": "linear",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Energia",
+        "yAxisProperty": "avg_energy",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "replace",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1300,
+        "y": 1380,
+        "wires": [
+            []
+        ]
     }
 ]

@@ -853,7 +853,7 @@
             <entry key="skip_data_rows" type="xboolean" value="false"/>
             <entry key="number_of_rows_to_skip" type="xlong" value="42"/>
             <entry key="limit_data_rows" type="xboolean" value="true"/>
-            <entry key="max_rows" type="xlong" value="50"/>
+            <entry key="max_rows" type="xlong" value="100"/>
         </config>
         <config key="encoding">
             <entry key="charset" type="xstring" value="UTF-8"/>
@@ -882,10 +882,10 @@
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-bundle-version" type="xstring" value="5.7.0.v202508280756"/>
-    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
-    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
-    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="5.7.0.v202508280756"/>
+    <entry key="node-feature-name" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-symbolic-name" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-vendor" type="xstring" isnull="true" value=""/>
+    <entry key="node-feature-version" type="xstring" value="0.0.0"/>
     <config key="factory_settings"/>
     <config key="node_creation_config">
         <config key="File System Connection"/>
@@ -899,12 +899,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 50, Cols: 22"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 100, Cols: 22"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="32cdf620-77d6-4c64-90e4-89f8ff115038"/>
+        <entry key="file_store_id" type="xstring" value="15bcad7a-2f9f-435b-b161-9d9c891cf883"/>
     </config>
 </config>
