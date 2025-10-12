@@ -10,7 +10,7 @@
     {
         "id": "bfc880c45abbde98",
         "type": "sqlitedb",
-        "db": "C:\\Users\\miguelareal\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
+        "db": "C:\\Users\\migue\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
         "mode": "RO"
     },
     {
@@ -85,8 +85,8 @@
         ],
         "order": 2,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "bb3ec38dd8362023",
@@ -124,103 +124,6 @@
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
-    },
-    {
-        "id": "8a03d256495f2d32",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey",
-                "palette": "light"
-            }
-        },
-        "site": {
-            "name": "Node-RED Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
     },
     {
         "id": "64e12a5f9c1416bd",
@@ -265,7 +168,7 @@
         "page": "64e12a5f9c1416bd",
         "width": "5",
         "height": 1,
-        "order": 1,
+        "order": 2,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -279,23 +182,12 @@
         "page": "64e12a5f9c1416bd",
         "width": "5",
         "height": 1,
-        "order": 2,
+        "order": 3,
         "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
-    },
-    {
-        "id": "5cda2f63f8a1cbbf",
-        "type": "ui-spacer",
-        "group": "26c1fd6ec37b5397",
-        "name": "spacer",
-        "tooltip": "",
-        "order": 1,
-        "width": 1,
-        "height": 1,
-        "className": ""
     },
     {
         "id": "d0fdf9073f835730",
@@ -304,7 +196,7 @@
         "page": "64e12a5f9c1416bd",
         "width": "5",
         "height": 1,
-        "order": 3,
+        "order": 4,
         "showTitle": false,
         "className": "",
         "visible": "true",
@@ -422,8 +314,8 @@
         ],
         "order": 4,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "fa434e8df39d1e36",
@@ -431,6 +323,34 @@
         "name": "Group 1",
         "page": "424023ef7054c83f",
         "width": "5",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e65461a18ea595ba",
+        "type": "ui-group",
+        "name": "Group 2",
+        "page": "424023ef7054c83f",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f0cecd37bd1aaf17",
+        "type": "ui-group",
+        "name": "Group Search",
+        "page": "64e12a5f9c1416bd",
+        "width": "10",
         "height": 1,
         "order": 1,
         "showTitle": false,
@@ -583,7 +503,7 @@
         "type": "function",
         "z": "bf283ad4cf60086f",
         "name": "mudar_dropdown",
-        "func": "let queries = flow.get(\"queries\");\nlet key = msg.payload;\n\nlet query = queries[key];\nmsg.topic = query;\n\nreturn msg;\n",
+        "func": "let queries = flow.get(\"dropdownqueries\");\nlet key = msg.payload;\n\nlet query = queries[key];\nmsg.topic = query;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -606,7 +526,7 @@
         "rules": [
             {
                 "t": "set",
-                "p": "queries",
+                "p": "dropdownqueries",
                 "pt": "flow",
                 "to": "{\"artistas\":\"SELECT id, ROW_NUMBER() OVER (ORDER BY popularity DESC) as rank, name, popularity, image_url, followers FROM artists ORDER BY popularity DESC\",\"albuns\":\"SELECT a.id, ROW_NUMBER() OVER (ORDER BY a.popularity DESC) as rank, a.name, a.popularity, a.image_url, b.name as artist_name FROM albums a JOIN artists b on a.artist_id = b.id ORDER BY a.popularity DESC\"}",
                 "tot": "json"
@@ -617,18 +537,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
+        "x": 450,
         "y": 440,
         "wires": [
             [
                 "39233bef12e4151d",
-                "21d86c0afc4ac349",
                 "d672038945b865c2",
                 "5c89b1c602ae797e",
                 "0a8476ece5f1a790",
-                "59223c9a3a9696b4",
                 "dbc4072cbda469e6",
-                "d7e241ef3ef3d718"
+                "49672c95bc1906b9"
             ]
         ]
     },
@@ -725,11 +643,11 @@
         "type": "sqlite",
         "z": "bf283ad4cf60086f",
         "mydb": "bfc880c45abbde98",
-        "sqlquery": "fixed",
+        "sqlquery": "msg.topic",
         "sql": "SELECT g.genre,\nROUND(AVG(t.popularity),2) as avg_popularity\nFROM tracks t JOIN\nalbums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY AVG(t.popularity) DESC\nLIMIT 10",
-        "name": "Popularidade de Géneros",
-        "x": 850,
-        "y": 780,
+        "name": "Popularidade média de Géneros",
+        "x": 1850,
+        "y": 860,
         "wires": [
             [
                 "c28dabe1624baf38"
@@ -744,7 +662,7 @@
         "group": "26c1fd6ec37b5397",
         "name": "",
         "label": "Popularidade média de Géneros Músicais",
-        "order": 2,
+        "order": 1,
         "chartType": "bar",
         "category": "",
         "categoryType": "none",
@@ -756,7 +674,7 @@
         "xAxisFormatType": "auto",
         "xmin": "",
         "xmax": "",
-        "yAxisLabel": "Popularidade",
+        "yAxisLabel": "Popularidade Média",
         "yAxisProperty": "avg_popularity",
         "yAxisPropertyType": "property",
         "ymin": "",
@@ -793,8 +711,8 @@
         "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 1200,
-        "y": 780,
+        "x": 2260,
+        "y": 860,
         "wires": [
             []
         ]
@@ -806,11 +724,11 @@
         "group": "0e8cce8dd10ee1a0",
         "name": "",
         "label": "Popularidade média por género ao longo dos meses",
-        "order": 2,
+        "order": 1,
         "chartType": "line",
         "category": "genre",
         "categoryType": "property",
-        "xAxisLabel": "Mês",
+        "xAxisLabel": "Tempo (Ano-Mês)",
         "xAxisProperty": "release_month",
         "xAxisPropertyType": "property",
         "xAxisType": "category",
@@ -818,7 +736,7 @@
         "xAxisFormatType": "auto",
         "xmin": "",
         "xmax": "",
-        "yAxisLabel": "Popularidade",
+        "yAxisLabel": "Popularidade Média",
         "yAxisProperty": "avg_popularity",
         "yAxisPropertyType": "property",
         "ymin": "",
@@ -855,8 +773,8 @@
         "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 2160,
-        "y": 880,
+        "x": 2300,
+        "y": 920,
         "wires": [
             []
         ]
@@ -902,7 +820,7 @@
         "id": "bc2d850805c8aecf",
         "type": "ui-dropdown",
         "z": "bf283ad4cf60086f",
-        "group": "0e8cce8dd10ee1a0",
+        "group": "f0cecd37bd1aaf17",
         "name": "DropdownGeneros",
         "label": "Filtro de géneros",
         "tooltip": "",
@@ -930,7 +848,8 @@
         "y": 880,
         "wires": [
             [
-                "5c795fcf987b3e70"
+                "5c795fcf987b3e70",
+                "a4c334ec0802f7b1"
             ]
         ]
     },
@@ -939,7 +858,7 @@
         "type": "function",
         "z": "bf283ad4cf60086f",
         "name": "montar_query",
-        "func": "let genres = msg.payload;\n\n// Garante que é sempre um array\nif (!Array.isArray(genres)) {\n    genres = [genres];\n}\n\n// Converte para formato SQL: 'pop','rock','edm'\nconst genreList = genres.map(g => `'${g}'`).join(\",\");\n\nmsg.topic = `\nSELECT \n  strftime('%Y-%m', a.release_date) AS release_month,\n  ROUND(AVG(t.popularity),2) AS avg_popularity,\n  g.genre\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE g.genre IN (${genreList}) \n  AND t.popularity IS NOT NULL\nGROUP BY g.genre, release_month\nORDER BY release_month;\n`;\n\nreturn msg;\n",
+        "func": "// --- Recebe géneros selecionados da dropdown ---\nlet genres = msg.payload;\n\n// Garante que é sempre um array\nif (!Array.isArray(genres)) {\n    genres = [genres];\n}\n\n// Se nenhum género for selecionado → mostra todos\nif (genres.length === 0) {\n    node.warn(\"Nenhum género selecionado — mostrando todos os géneros.\");\n\n    msg.topic = `\n        SELECT \n          strftime('%Y-%m', a.release_date) AS release_month,\n          ROUND(AVG(t.popularity),2) AS avg_popularity,\n          g.genre\n        FROM tracks t\n        JOIN albums a ON t.album_id = a.id\n        JOIN artists ar ON a.artist_id = ar.id\n        JOIN artist_genres g ON ar.id = g.id\n        WHERE t.popularity IS NOT NULL\n        GROUP BY g.genre, release_month\n        ORDER BY release_month;\n    `;\n    return msg;\n}\n\n// Converte os géneros selecionados para formato SQL: 'pop','rock','edm'\nconst genreList = genres.map(g => `'${g}'`).join(\",\");\n\n// Query filtrada pelos géneros selecionados\nmsg.topic = `\nSELECT \n  strftime('%Y-%m', a.release_date) AS release_month,\n  ROUND(AVG(t.popularity),2) AS avg_popularity,\n  g.genre\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE g.genre IN (${genreList})\n  AND t.popularity IS NOT NULL\nGROUP BY g.genre, release_month\nORDER BY release_month;\n`;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -947,7 +866,7 @@
         "finalize": "",
         "libs": [],
         "x": 1580,
-        "y": 880,
+        "y": 920,
         "wires": [
             [
                 "f9520f394ae0d2d5"
@@ -978,9 +897,9 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "SELECT \n  g.genre, \n  strftime('%Y-%m', a.release_date) AS release_month,\n  ROUND(AVG(t.popularity), 2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre, release_month\nORDER BY release_month;",
-        "name": "TP1-ISI-Spotify-DB",
-        "x": 1810,
-        "y": 880,
+        "name": "Popularidade média temporal",
+        "x": 1840,
+        "y": 920,
         "wires": [
             [
                 "ea97c4892a67cd11"
@@ -999,7 +918,7 @@
         "chartType": "scatter",
         "category": "genre",
         "categoryType": "property",
-        "xAxisLabel": "Número de músicas",
+        "xAxisLabel": "Volume (Nº de Músicas)",
         "xAxisProperty": "track_count",
         "xAxisPropertyType": "property",
         "xAxisType": "linear",
@@ -1007,7 +926,7 @@
         "xAxisFormatType": "auto",
         "xmin": "",
         "xmax": "",
-        "yAxisLabel": "Popularidade média",
+        "yAxisLabel": "Popularidade Média",
         "yAxisProperty": "avg_popularity",
         "yAxisPropertyType": "property",
         "ymin": "",
@@ -1119,8 +1038,8 @@
         "name": "Todos os artistas",
         "label": "Artistas",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": "0",
+        "height": "0",
         "maxrows": "5",
         "passthru": false,
         "autocols": false,
@@ -1254,7 +1173,7 @@
         "width": "4",
         "height": "6",
         "head": "",
-        "format": "<v-card class=\"pa-0\" flat> <v-img v-if=\"msg.payload.image_url\" :src=\"msg.payload.image_url\" contain ></v-img> <v-alert v-else type=\"info\" outlined> Clique numa linha para ver a imagem do artista.</v-alert> </v-card>",
+        "format": "<v-img v-if=\"msg.payload.image_url\" :src=\"msg.payload.image_url\" contain ></v-img> <v-alert v-else type=\"info\" outlined> Clique numa linha para ver a imagem do artista.</v-alert>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -1278,7 +1197,7 @@
         "width": "4",
         "height": "6",
         "head": "",
-        "format": "<v-card class=\"pa-0\" flat> <v-img v-if=\"msg.payload.image_url\" :src=\"msg.payload.image_url\" contain ></v-img> <v-alert v-else type=\"info\" outlined> Clique numa linha para ver a imagem do álbum.</v-alert> </v-card>",
+        "format": "<v-img v-if=\"msg.payload.image_url\" :src=\"msg.payload.image_url\" contain ></v-img> <v-alert v-else type=\"info\" outlined> Clique numa linha para ver a imagem do álbum.</v-alert>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -1295,7 +1214,7 @@
         "type": "function",
         "z": "bf283ad4cf60086f",
         "name": "gerar_query_musicas",
-        "func": "let album_id = msg.payload.id;\n\nmsg.topic = \"Select id, name from tracks where album_id = '\"+album_id+\"'\";\n\nreturn msg;\n",
+        "func": "let album_id = msg.payload.id;\n\nmsg.topic = \"Select id, name, duration_ms from tracks where album_id = '\"+album_id+\"'\";\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1336,8 +1255,8 @@
                 "align": "start"
             },
             {
-                "title": "ID",
-                "key": "id",
+                "title": "Duração (min:ss)",
+                "key": "duration",
                 "keyType": "key",
                 "type": "text",
                 "width": "",
@@ -1348,7 +1267,7 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 2690,
+        "x": 2950,
         "y": 280,
         "wires": [
             [
@@ -1374,8 +1293,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 3120,
-        "y": 320,
+        "x": 3440,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1392,8 +1311,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2910,
-        "y": 320,
+        "x": 3190,
+        "y": 280,
         "wires": [
             [
                 "d36bc7993714d5bf"
@@ -1412,7 +1331,8 @@
         "y": 280,
         "wires": [
             [
-                "99c4b2719f37348d"
+                "ee87031807dc6d39",
+                "084fb0173eb18c52"
             ]
         ],
         "icon": "node-red/db.svg"
@@ -1422,10 +1342,10 @@
         "type": "sqlite",
         "z": "bf283ad4cf60086f",
         "mydb": "bfc880c45abbde98",
-        "sqlquery": "fixed",
-        "sql": "SELECT\n  CASE \n    WHEN valence < 0.33 THEN 'Baixa'\n    WHEN valence < 0.66 THEN 'Média'\n    ELSE 'Alta'\n  END AS valence_group,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY valence_group;\n",
-        "name": "Valência das músicas",
-        "x": 840,
+        "sqlquery": "msg.topic",
+        "sql": "SELECT\n  CASE \n    WHEN valence < 0.33 THEN 'Baixa'\n    WHEN valence < 0.66 THEN 'Média'\n    ELSE 'Alta'\n  END AS attribute_group,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY attribute_group;\n",
+        "name": "Atributos Musicais",
+        "x": 1370,
         "y": 1180,
         "wires": [
             [
@@ -1439,9 +1359,9 @@
         "type": "ui-chart",
         "z": "bf283ad4cf60086f",
         "group": "fa434e8df39d1e36",
-        "name": "Valência das músicas",
-        "label": "Valência Musical (felicidade da música)",
-        "order": 1,
+        "name": "Média de Atributo Musical",
+        "label": "Média de Atributo Musical",
+        "order": 2,
         "chartType": "doughnut",
         "category": "",
         "categoryType": "none",
@@ -1486,11 +1406,11 @@
             "#e5e5e5"
         ],
         "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
+        "width": "5",
+        "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 1340,
+        "x": 1910,
         "y": 1180,
         "wires": [
             []
@@ -1501,14 +1421,14 @@
         "type": "function",
         "z": "bf283ad4cf60086f",
         "name": "calcular_percentagens",
-        "func": "// Soma todos os valores para calcular percentagens\nlet totalTracks = msg.payload.reduce((sum, row) => sum + row.total, 0);\n\n// Mapeia para o formato do pie chart com label + percentagem\nmsg.payload = msg.payload.map(row => ({\n    label: `${row.valence_group} (${((row.total / totalTracks) * 100).toFixed(1)}%)`,\n    value: row.total\n}));\n\nreturn msg;\n",
+        "func": "// Soma todos os valores para calcular percentagens\nlet totalTracks = msg.payload.reduce((sum, row) => sum + row.total, 0);\n\n// Mapeia para o formato do pie chart com label + percentagem\nmsg.payload = msg.payload.map(row => ({\n    label: `${row.attribute_group} (${((row.total / totalTracks) * 100).toFixed(1)}%)`,\n    value: row.total\n}));\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
+        "x": 1640,
         "y": 1180,
         "wires": [
             [
@@ -1525,7 +1445,7 @@
         "sql": "SELECT\n  CASE WHEN valence > 0.5 THEN 'Feliz' ELSE 'Triste' END AS mood,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY mood;\n",
         "name": "Mood Musical",
         "x": 820,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             [
                 "462909f9683913bc"
@@ -1537,10 +1457,10 @@
         "id": "6c95c65bdd3bb3a5",
         "type": "ui-chart",
         "z": "bf283ad4cf60086f",
-        "group": "fa434e8df39d1e36",
+        "group": "e65461a18ea595ba",
         "name": "Mood Musical",
         "label": "Mood Musical (Feliz vs Triste)",
-        "order": 2,
+        "order": 1,
         "chartType": "doughnut",
         "category": "",
         "categoryType": "none",
@@ -1590,7 +1510,7 @@
         "className": "",
         "interpolation": "linear",
         "x": 1320,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             []
         ]
@@ -1608,7 +1528,7 @@
         "finalize": "",
         "libs": [],
         "x": 1080,
-        "y": 1280,
+        "y": 1340,
         "wires": [
             [
                 "6c95c65bdd3bb3a5"
@@ -1623,8 +1543,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT \n    SUBSTR(release_date, 1, 7) AS month,\n    AVG(energy) AS avg_energy\nFROM tracks t\nJOIN albums al ON t.album_id = al.id\nGROUP BY month\nORDER BY month;\n",
         "name": "Tendência de energia ao longo do tempo",
-        "x": 900,
-        "y": 1380,
+        "x": 1440,
+        "y": 1240,
         "wires": [
             [
                 "1dc586b92e591319"
@@ -1637,21 +1557,21 @@
         "type": "ui-chart",
         "z": "bf283ad4cf60086f",
         "group": "fa434e8df39d1e36",
-        "name": "Tendência de energia ao longo do tempo",
-        "label": "Tendência de energia ao longo do tempo",
+        "name": "Tendência de atributo ao longo do tempo",
+        "label": "Tendência de atributo ao longo do tempo",
         "order": 3,
         "chartType": "line",
-        "category": "payload",
-        "categoryType": "msg",
-        "xAxisLabel": "Tempo",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "Tempo (Ano-Mês)",
         "xAxisProperty": "month",
         "xAxisPropertyType": "property",
-        "xAxisType": "linear",
+        "xAxisType": "category",
         "xAxisFormat": "",
         "xAxisFormatType": "auto",
         "xmin": "",
         "xmax": "",
-        "yAxisLabel": "Energia",
+        "yAxisLabel": "Atributo",
         "yAxisProperty": "avg_energy",
         "yAxisPropertyType": "property",
         "ymin": "",
@@ -1688,10 +1608,179 @@
         "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 1300,
-        "y": 1380,
+        "x": 1840,
+        "y": 1240,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "49672c95bc1906b9",
+        "type": "ui-dropdown",
+        "z": "bf283ad4cf60086f",
+        "group": "fa434e8df39d1e36",
+        "name": "DropdownAtributosMusicais",
+        "label": "Filtros",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Valência (Felicidade)",
+                "value": "valence",
+                "type": "str"
+            },
+            {
+                "label": "Dançabilidade",
+                "value": "danceability",
+                "type": "str"
+            },
+            {
+                "label": "Volume (Ruído)",
+                "value": "loudness",
+                "type": "str"
+            },
+            {
+                "label": "Vocalidade",
+                "value": "speechiness",
+                "type": "str"
+            },
+            {
+                "label": "Acusticidade",
+                "value": "acousticness",
+                "type": "str"
+            },
+            {
+                "label": "Instrumentalidade",
+                "value": "instrumentalness",
+                "type": "str"
+            },
+            {
+                "label": "Vivacidade",
+                "value": "liveness",
+                "type": "str"
+            },
+            {
+                "label": "Energia",
+                "value": "energy",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": false,
+        "msgTrigger": "onChange",
+        "x": 860,
+        "y": 1180,
+        "wires": [
+            [
+                "6f86e7881f1d780f",
+                "ae02e54410d9afdb"
+            ]
+        ]
+    },
+    {
+        "id": "6f86e7881f1d780f",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "gerar_sql_script",
+        "func": "// O valor selecionado da dropdown (ex: \"valence\", \"energy\", etc.)\nlet atributo = msg.payload;\n\n// Monta o script SQL dinâmico\nlet sql = `\nSELECT\n  CASE \n    WHEN ${atributo} < 0.33 THEN 'Baixa'\n    WHEN ${atributo} < 0.66 THEN 'Média'\n    ELSE 'Alta'\n  END AS attribute_group,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY attribute_group;\n`;\n\n// Envia o SQL para o próximo nó (SQL node)\nmsg.topic = sql;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 1180,
+        "wires": [
+            [
+                "59223c9a3a9696b4"
+            ]
+        ]
+    },
+    {
+        "id": "ae02e54410d9afdb",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "gerar_sql_script",
+        "func": "// O valor selecionado da dropdown (ex: \"valence\", \"energy\", etc.)\nlet atributo = msg.payload;\n\n// Monta o script SQL dinâmico\nlet sql = `\nSELECT\nSUBSTR(release_date, 1, 7) AS month,\n  AVG(${atributo}) AS avg_attribute\nFROM tracks t\nJOIN albums al ON t.album_id = al.id\nGROUP BY month\nORDER BY month\n`;\n\n// Envia o SQL para o próximo nó (SQL node)\nmsg.topic = sql;\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 1240,
+        "wires": [
+            [
+                "d7e241ef3ef3d718"
+            ]
+        ]
+    },
+    {
+        "id": "a4c334ec0802f7b1",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "montar_query",
+        "func": "// --- Recebe os géneros selecionados da dropdown ---\nlet genres = msg.payload;\n\n// Garante que é sempre um array (caso o utilizador selecione só um)\nif (!Array.isArray(genres)) {\n    genres = [genres];\n}\n\n// Se nenhum género for selecionado, devolve uma query genérica\nif (genres.length === 0) {\n    node.warn(\"Nenhum género selecionado — mostrando todos.\");\n    msg.topic = `\n        SELECT g.genre,\n               ROUND(AVG(t.popularity),2) AS avg_popularity\n        FROM tracks t\n        JOIN albums a ON t.album_id = a.id\n        JOIN artists ar ON a.artist_id = ar.id\n        JOIN artist_genres g ON ar.id = g.id\n        WHERE t.popularity IS NOT NULL\n        GROUP BY g.genre\n        ORDER BY avg_popularity DESC\n        LIMIT 10;\n    `;\n    return msg;\n}\n\n// Converte o array de géneros para formato SQL: 'pop','rock','edm'\nconst genreList = genres.map(g => `'${g}'`).join(\",\");\n\n// Cria a query filtrada pelos géneros escolhidos\nmsg.topic = `\nSELECT \n    g.genre,\n    ROUND(AVG(t.popularity),2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE g.genre IN (${genreList})\n  AND t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY avg_popularity DESC;\n`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1580,
+        "y": 860,
+        "wires": [
+            [
+                "21d86c0afc4ac349"
+            ]
+        ]
+    },
+    {
+        "id": "ee87031807dc6d39",
+        "type": "function",
+        "z": "bf283ad4cf60086f",
+        "name": "converter_ms_em_min",
+        "func": "// Verifica se o payload é um array vindo do nó SQLite\nif (!Array.isArray(msg.payload)) {\n    node.warn(\"Esperava um array vindo do nó SQLite, mas recebi outro formato.\");\n    return msg;\n}\n\n// Função auxiliar para converter ms → min:ss\nfunction formatDuration(ms) {\n    if (ms == null) return null;\n    let totalSeconds = Math.floor(ms / 1000);\n    let minutes = Math.floor(totalSeconds / 60);\n    let seconds = totalSeconds % 60;\n    return `${minutes}:${seconds.toString().padStart(2, '0')}`;\n}\n\n// Mapeia todas as linhas, adicionando a duração formatada\nmsg.payload = msg.payload.map(row => ({\n    ...row,\n    duration: formatDuration(row.duration_ms)\n}));\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2700,
+        "y": 280,
+        "wires": [
+            [
+                "99c4b2719f37348d"
+            ]
+        ]
+    },
+    {
+        "id": "084fb0173eb18c52",
+        "type": "debug",
+        "z": "bf283ad4cf60086f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2740,
+        "y": 400,
+        "wires": []
     }
 ]
