@@ -7,15 +7,15 @@
     <config key="authorInformation">
         <entry key="authored-by" type="xstring" value="drs0"/>
         <entry key="authored-when" type="xstring" value="2024-01-02 13:12:44 -0300"/>
-        <entry key="lastEdited-by" type="xstring" value="miguelareal"/>
-        <entry key="lastEdited-when" type="xstring" value="2025-10-10 17:00:09 +0100"/>
+        <entry key="lastEdited-by" type="xstring" value="Areal"/>
+        <entry key="lastEdited-when" type="xstring" value="2025-10-13 21:12:01 +0100"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="CONFIGURED"/>
     <config key="nodecontainer_message">
         <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="Contains one node with execution failure (Send Email #66)"/>
-        <entry key="issue" type="xstring" value="Send Email #66: This error occurred while communicating with the SMTP server: &quot;javax.mail.AuthenticationFailedException: 535 5.7.3 Authentication unsuccessful [PA7P264CA0135.FRAP264.PROD.OUTLOOK.COM 2025-10-10T14:18:33.763Z 08DE076D01D8AE66]%%00010&quot;."/>
+        <entry key="message" type="xstring" value="Contains one node with execution failure (Python Source (legacy) #86)"/>
+        <entry key="issue" type="xstring" value="Python Source (legacy) #86: Could not start Python. There are problems with your Python environment:%%00010Could not start Python executable at the given location (no_conda_environment_selected\python.exe): Cannot run program &quot;no_conda_environment_selected\python.exe&quot;: CreateProcess error=2, O sistema não conseguiu localizar o ficheiro especificado"/>
     </config>
     <config key="workflow_credentials"/>
     <config key="annotations">
@@ -878,6 +878,22 @@
                 </config>
             </config>
         </config>
+        <config key="node_86">
+            <entry key="id" type="xint" value="86"/>
+            <entry key="node_settings_file" type="xstring" value="Python Source _legacy_ (#86)/settings.xml"/>
+            <entry key="node_is_meta" type="xboolean" value="false"/>
+            <entry key="node_type" type="xstring" value="NativeNode"/>
+            <entry key="ui_classname" type="xstring" value="org.knime.core.node.workflow.NodeUIInformation"/>
+            <config key="ui_settings">
+                <config key="extrainfo.node.bounds">
+                    <entry key="array-size" type="xint" value="4"/>
+                    <entry key="0" type="xint" value="-725"/>
+                    <entry key="1" type="xint" value="674"/>
+                    <entry key="2" type="xint" value="-1"/>
+                    <entry key="3" type="xint" value="-1"/>
+                </config>
+            </config>
+        </config>
     </config>
     <config key="connections">
         <config key="connection_0">
@@ -996,6 +1012,18 @@
         </config>
         <config key="connection_13">
             <entry key="sourceID" type="xint" value="29"/>
+            <entry key="destID" type="xint" value="81"/>
+            <entry key="sourcePort" type="xint" value="1"/>
+            <entry key="destPort" type="xint" value="1"/>
+        </config>
+        <config key="connection_14">
+            <entry key="sourceID" type="xint" value="29"/>
+            <entry key="destID" type="xint" value="83"/>
+            <entry key="sourcePort" type="xint" value="1"/>
+            <entry key="destPort" type="xint" value="1"/>
+        </config>
+        <config key="connection_15">
+            <entry key="sourceID" type="xint" value="29"/>
             <entry key="destID" type="xint" value="64"/>
             <entry key="sourcePort" type="xint" value="1"/>
             <entry key="destPort" type="xint" value="1"/>
@@ -1008,18 +1036,6 @@
                     <entry key="1" type="xint" value="526"/>
                 </config>
             </config>
-        </config>
-        <config key="connection_14">
-            <entry key="sourceID" type="xint" value="29"/>
-            <entry key="destID" type="xint" value="83"/>
-            <entry key="sourcePort" type="xint" value="1"/>
-            <entry key="destPort" type="xint" value="1"/>
-        </config>
-        <config key="connection_15">
-            <entry key="sourceID" type="xint" value="29"/>
-            <entry key="destID" type="xint" value="81"/>
-            <entry key="sourcePort" type="xint" value="1"/>
-            <entry key="destPort" type="xint" value="1"/>
         </config>
         <config key="connection_16">
             <entry key="sourceID" type="xint" value="30"/>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="sourceCode" type="xstring" value="import socket%%00010import json%%00010import pandas as pd%%00010%%00010HOST = 'localhost'%%00010PORT = 9999%%00010%%00010s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)%%00010s.connect((HOST, PORT))%%00010%%00010data = []%%00010for _ in range(10):  # exemplo: lê 10 músicas%%00010    line = s.recv(4096).decode(&quot;utf-8&quot;).strip()%%00010    if line:%%00010        row = json.loads(line)%%00010        data.append(row)%%00010%%00010s.close()%%00010%%00010# Converte para DataFrame KNIME%%00010output_table = pd.DataFrame(data)"/>
+        <entry key="rowLimit" type="xint" value="1000"/>
+        <entry key="convertMissingToPython" type="xboolean" value="false"/>
+        <entry key="convertMissingFromPython" type="xboolean" value="false"/>
+        <entry key="sentinelOption" type="xstring" value="MIN_VAL"/>
+        <entry key="sentinelValue" type="xint" value="0"/>
+        <entry key="chunkSize" type="xint" value="500000"/>
+        <entry key="pythonVersionOption" type="xstring" value="python3"/>
+        <entry key="python2Command" type="xstring" value=""/>
+        <entry key="python3Command" type="xstring" value=""/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="ERROR"/>
+        <entry key="message" type="xstring" value="Execute failed: Could not start Python. There are problems with your Python environment:%%00010Could not start Python executable at the given location (no_conda_environment_selected\python.exe): Cannot run program &quot;no_conda_environment_selected\python.exe&quot;: CreateProcess error=2, O sistema não conseguiu localizar o ficheiro especificado"/>
+    </config>
+    <entry key="factory" type="xstring" value="org.knime.python2.nodes.source.Python2SourceNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Source (legacy)"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python2.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.6.0.v202507151411"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python 2 Integration (legacy)"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python2.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.6.0.v202507151411"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Python Source (legacy)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
