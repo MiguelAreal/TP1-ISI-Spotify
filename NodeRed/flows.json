@@ -10,7 +10,7 @@
     {
         "id": "bfc880c45abbde98",
         "type": "sqlitedb",
-        "db": "C:\\Users\\migue\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
+        "db": "C:\\Users\\miguelareal\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
         "mode": "RO"
     },
     {
@@ -55,7 +55,7 @@
     {
         "id": "53d75b9b07c94b8c",
         "type": "ui-page",
-        "name": "Popularidade de artistas e álbums",
+        "name": "Popularidade de artistas e álbuns",
         "ui": "016c25323c6a9ebe",
         "path": "/page2",
         "icon": "home",
@@ -85,8 +85,8 @@
         ],
         "order": 2,
         "className": "",
-        "visible": true,
-        "disabled": false
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "bb3ec38dd8362023",
@@ -366,8 +366,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "SELECT name, popularity FROM artists ORDER BY popularity DESC;",
-        "name": "TP1-ISI-Spotify-DB",
-        "x": 1370,
+        "name": "ExecutarQuery",
+        "x": 1280,
         "y": 500,
         "wires": [
             [
@@ -380,7 +380,7 @@
         "id": "1f68a7ba36e22b2d",
         "type": "inject",
         "z": "bf283ad4cf60086f",
-        "name": "Default Dropdown",
+        "name": "SetDefaultDropdown",
         "props": [
             {
                 "p": "payload"
@@ -393,7 +393,7 @@
         "topic": "",
         "payload": "artistas",
         "payloadType": "str",
-        "x": 210,
+        "x": 220,
         "y": 380,
         "wires": [
             [
@@ -406,7 +406,7 @@
         "type": "ui-table",
         "z": "bf283ad4cf60086f",
         "group": "bb3ec38dd8362023",
-        "name": "",
+        "name": "TabelaInfo",
         "label": "",
         "order": 2,
         "width": "6",
@@ -447,7 +447,7 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 1590,
+        "x": 1450,
         "y": 500,
         "wires": [
             [
@@ -493,8 +493,7 @@
         "y": 500,
         "wires": [
             [
-                "e29af8a1174c7db8",
-                "60e6e293f15b052e"
+                "e29af8a1174c7db8"
             ]
         ]
     },
@@ -510,7 +509,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
+        "x": 1090,
         "y": 500,
         "wires": [
             [
@@ -522,7 +521,7 @@
         "id": "c7161e08edbd3021",
         "type": "change",
         "z": "bf283ad4cf60086f",
-        "name": "",
+        "name": "SetFlowQueries",
         "rules": [
             {
                 "t": "set",
@@ -537,7 +536,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
+        "x": 420,
         "y": 440,
         "wires": [
             [
@@ -562,7 +561,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1830,
+        "x": 1630,
         "y": 580,
         "wires": [
             [
@@ -588,7 +587,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2120,
+        "x": 1860,
         "y": 580,
         "wires": [
             []
@@ -602,7 +601,7 @@
         "order": 1,
         "width": "4",
         "height": "1",
-        "name": "",
+        "name": "Texto",
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "row-center",
@@ -614,7 +613,7 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 2110,
+        "x": 1850,
         "y": 500,
         "wires": []
     },
@@ -630,7 +629,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1860,
+        "x": 1660,
         "y": 500,
         "wires": [
             [
@@ -645,8 +644,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "SELECT g.genre,\nROUND(AVG(t.popularity),2) as avg_popularity\nFROM tracks t JOIN\nalbums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY AVG(t.popularity) DESC\nLIMIT 10",
-        "name": "Popularidade média de Géneros",
-        "x": 1850,
+        "name": "AvgGeneroPopularidade",
+        "x": 1610,
         "y": 860,
         "wires": [
             [
@@ -711,7 +710,7 @@
         "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 2260,
+        "x": 1900,
         "y": 860,
         "wires": [
             []
@@ -773,7 +772,7 @@
         "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 2300,
+        "x": 2000,
         "y": 920,
         "wires": [
             []
@@ -786,8 +785,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "fixed",
         "sql": "SELECT DISTINCT genre FROM artist_genres ORDER BY genre;",
-        "name": "Buscar Todos os Géneros",
-        "x": 850,
+        "name": "GetGeneros",
+        "x": 810,
         "y": 880,
         "wires": [
             [
@@ -808,7 +807,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1100,
+        "x": 980,
         "y": 880,
         "wires": [
             [
@@ -844,7 +843,7 @@
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onChange",
-        "x": 1350,
+        "x": 1170,
         "y": 880,
         "wires": [
             [
@@ -865,7 +864,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1580,
+        "x": 1380,
         "y": 920,
         "wires": [
             [
@@ -880,9 +879,9 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "fixed",
         "sql": "SELECT \n  g.genre,\n  COUNT(t.id) AS track_count,\n  ROUND(AVG(t.popularity),2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY avg_popularity DESC;\n",
-        "name": "Popularidade e Volume",
+        "name": "GetPopularidadeVolume",
         "x": 850,
-        "y": 980,
+        "y": 1000,
         "wires": [
             [
                 "2da2468016b14042"
@@ -897,8 +896,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "SELECT \n  g.genre, \n  strftime('%Y-%m', a.release_date) AS release_month,\n  ROUND(AVG(t.popularity), 2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre, release_month\nORDER BY release_month;",
-        "name": "Popularidade média temporal",
-        "x": 1840,
+        "name": "AvgGeneroPopularidadeTemporal",
+        "x": 1640,
         "y": 920,
         "wires": [
             [
@@ -963,33 +962,8 @@
         "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 1170,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "60e6e293f15b052e",
-        "type": "change",
-        "z": "bf283ad4cf60086f",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "dropdownvalue",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
         "x": 1150,
-        "y": 600,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -998,7 +972,7 @@
         "id": "1a3f135b63f1b094",
         "type": "inject",
         "z": "bf283ad4cf60086f",
-        "name": "Update Automático",
+        "name": "UpdateAutomático",
         "props": [],
         "repeat": "60",
         "crontab": "",
@@ -1020,8 +994,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "fixed",
         "sql": "select id, name, followers,image_url from artists\norder by name asc;",
-        "name": "Todos os artistas",
-        "x": 850,
+        "name": "GetArtistas",
+        "x": 830,
         "y": 280,
         "wires": [
             [
@@ -1035,7 +1009,7 @@
         "type": "ui-table",
         "z": "bf283ad4cf60086f",
         "group": "d6b9849b1523bbd4",
-        "name": "Todos os artistas",
+        "name": "Artistas",
         "label": "Artistas",
         "order": 1,
         "width": "0",
@@ -1068,7 +1042,7 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 1130,
+        "x": 980,
         "y": 280,
         "wires": [
             [
@@ -1081,7 +1055,7 @@
         "id": "2f2440bc8c0b6f8e",
         "type": "function",
         "z": "bf283ad4cf60086f",
-        "name": "gerar_query_albuns",
+        "name": "query_albuns",
         "func": "let artist_id = msg.payload.id;\n\nmsg.topic = \"Select id, name, release_date,image_url from albums where artist_id = '\"+artist_id+\"'\";\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1089,7 +1063,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1380,
+        "x": 1160,
         "y": 280,
         "wires": [
             [
@@ -1104,8 +1078,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "select id, name, followers from artists\norder by name asc;",
-        "name": "Albums de artista",
-        "x": 1630,
+        "name": "GetAlbuns",
+        "x": 1330,
         "y": 280,
         "wires": [
             [
@@ -1119,7 +1093,7 @@
         "type": "ui-table",
         "z": "bf283ad4cf60086f",
         "group": "ab0f4d3228b4e7a1",
-        "name": "Todos os albuns",
+        "name": "Albums",
         "label": "Álbuns",
         "order": 1,
         "width": "0",
@@ -1152,7 +1126,7 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 1980,
+        "x": 1480,
         "y": 280,
         "wires": [
             [
@@ -1168,7 +1142,7 @@
         "group": "d6b9849b1523bbd4",
         "page": "",
         "ui": "",
-        "name": "Imagem de artista",
+        "name": "ArtistImg",
         "order": 2,
         "width": "4",
         "height": "6",
@@ -1179,7 +1153,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1370,
+        "x": 1140,
         "y": 320,
         "wires": [
             []
@@ -1192,7 +1166,7 @@
         "group": "ab0f4d3228b4e7a1",
         "page": "",
         "ui": "",
-        "name": "Imagem de álbum",
+        "name": "AlbumImg",
         "order": 2,
         "width": "4",
         "height": "6",
@@ -1203,7 +1177,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2210,
+        "x": 1640,
         "y": 320,
         "wires": [
             []
@@ -1213,7 +1187,7 @@
         "id": "b16f0dc6f58f6d18",
         "type": "function",
         "z": "bf283ad4cf60086f",
-        "name": "gerar_query_musicas",
+        "name": "musicas_query",
         "func": "let album_id = msg.payload.id;\n\nmsg.topic = \"Select id, name, duration_ms from tracks where album_id = '\"+album_id+\"'\";\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1221,7 +1195,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2220,
+        "x": 1660,
         "y": 280,
         "wires": [
             [
@@ -1234,7 +1208,7 @@
         "type": "ui-table",
         "z": "bf283ad4cf60086f",
         "group": "a4bf936feb75172a",
-        "name": "Todas as músicas",
+        "name": "Musicas",
         "label": "Músicas do Álbum",
         "order": 1,
         "width": "0",
@@ -1267,8 +1241,8 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 2950,
-        "y": 280,
+        "x": 1500,
+        "y": 140,
         "wires": [
             [
                 "4e9c0f88c20e9b34"
@@ -1282,7 +1256,7 @@
         "group": "a4bf936feb75172a",
         "page": "",
         "ui": "",
-        "name": "Spotify Widget",
+        "name": "WidgetSpotify ",
         "order": 2,
         "width": "4",
         "height": "6",
@@ -1293,8 +1267,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 3440,
-        "y": 280,
+        "x": 1820,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1303,7 +1277,7 @@
         "id": "4e9c0f88c20e9b34",
         "type": "function",
         "z": "bf283ad4cf60086f",
-        "name": "montar_url_preview",
+        "name": "url_preview",
         "func": "msg.payload = \"https://open.spotify.com/embed/track/\" + msg.payload.id + \"?utm_source=generator\";\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1311,8 +1285,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3190,
-        "y": 280,
+        "x": 1650,
+        "y": 140,
         "wires": [
             [
                 "d36bc7993714d5bf"
@@ -1326,8 +1300,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "select id, name, followers from artists\norder by name asc;",
-        "name": "Músicas de álbum",
-        "x": 2450,
+        "name": "GetMusicasAlbum",
+        "x": 1870,
         "y": 280,
         "wires": [
             [
@@ -1343,8 +1317,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "SELECT\n  CASE \n    WHEN valence < 0.33 THEN 'Baixa'\n    WHEN valence < 0.66 THEN 'Média'\n    ELSE 'Alta'\n  END AS attribute_group,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY attribute_group;\n",
-        "name": "Atributos Musicais",
-        "x": 1370,
+        "name": "GetDadosAtributo",
+        "x": 1310,
         "y": 1180,
         "wires": [
             [
@@ -1409,7 +1383,7 @@
         "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 1910,
+        "x": 1750,
         "y": 1180,
         "wires": [
             []
@@ -1427,7 +1401,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1640,
+        "x": 1520,
         "y": 1180,
         "wires": [
             [
@@ -1442,8 +1416,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "fixed",
         "sql": "SELECT\n  CASE WHEN valence > 0.5 THEN 'Feliz' ELSE 'Triste' END AS mood,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY mood;\n",
-        "name": "Mood Musical",
-        "x": 820,
+        "name": "GetValence",
+        "x": 810,
         "y": 1340,
         "wires": [
             [
@@ -1508,7 +1482,7 @@
         "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 1320,
+        "x": 1200,
         "y": 1340,
         "wires": [
             []
@@ -1526,7 +1500,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
+        "x": 1000,
         "y": 1340,
         "wires": [
             [
@@ -1539,10 +1513,10 @@
         "type": "sqlite",
         "z": "bf283ad4cf60086f",
         "mydb": "bfc880c45abbde98",
-        "sqlquery": "fixed",
-        "sql": "SELECT \n    SUBSTR(release_date, 1, 7) AS month,\n    AVG(energy) AS avg_energy\nFROM tracks t\nJOIN albums al ON t.album_id = al.id\nGROUP BY month\nORDER BY month;\n",
-        "name": "Tendência de energia ao longo do tempo",
-        "x": 1440,
+        "sqlquery": "msg.topic",
+        "sql": "SELECT \n    SUBSTR(release_date, 1, 7) AS month,\n    AVG(energy) AS a\nFROM tracks t\nJOIN albums al ON t.album_id = al.id\nGROUP BY month\nORDER BY month;\n",
+        "name": "GetAvgAtributo",
+        "x": 1300,
         "y": 1240,
         "wires": [
             [
@@ -1571,7 +1545,7 @@
         "xmin": "",
         "xmax": "",
         "yAxisLabel": "Atributo",
-        "yAxisProperty": "avg_energy",
+        "yAxisProperty": "avg_attribute",
         "yAxisPropertyType": "property",
         "ymin": "",
         "ymax": "",
@@ -1607,7 +1581,7 @@
         "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 1840,
+        "x": 1560,
         "y": 1240,
         "wires": [
             []
@@ -1689,7 +1663,7 @@
         "id": "6f86e7881f1d780f",
         "type": "function",
         "z": "bf283ad4cf60086f",
-        "name": "gerar_sql_script",
+        "name": "gerar_script_sql",
         "func": "// O valor selecionado da dropdown (ex: \"valence\", \"energy\", etc.)\nlet atributo = msg.payload;\n\n// Monta o script SQL dinâmico\nlet sql = `\nSELECT\n  CASE \n    WHEN ${atributo} < 0.33 THEN 'Baixa'\n    WHEN ${atributo} < 0.66 THEN 'Média'\n    ELSE 'Alta'\n  END AS attribute_group,\n  COUNT(*) AS total\nFROM tracks\nGROUP BY attribute_group;\n`;\n\n// Envia o SQL para o próximo nó (SQL node)\nmsg.topic = sql;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1709,7 +1683,7 @@
         "id": "ae02e54410d9afdb",
         "type": "function",
         "z": "bf283ad4cf60086f",
-        "name": "gerar_sql_script",
+        "name": "gerar_script_sql",
         "func": "// O valor selecionado da dropdown (ex: \"valence\", \"energy\", etc.)\nlet atributo = msg.payload;\n\n// Monta o script SQL dinâmico\nlet sql = `\nSELECT\nSUBSTR(release_date, 1, 7) AS month,\n  AVG(${atributo}) AS avg_attribute\nFROM tracks t\nJOIN albums al ON t.album_id = al.id\nGROUP BY month\nORDER BY month\n`;\n\n// Envia o SQL para o próximo nó (SQL node)\nmsg.topic = sql;\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "timeout": 0,
@@ -1737,7 +1711,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1580,
+        "x": 1380,
         "y": 860,
         "wires": [
             [
@@ -1749,7 +1723,7 @@
         "id": "ee87031807dc6d39",
         "type": "function",
         "z": "bf283ad4cf60086f",
-        "name": "converter_ms_em_min",
+        "name": "converter_duracao",
         "func": "// Verifica se o payload é um array vindo do nó SQLite\nif (!Array.isArray(msg.payload)) {\n    node.warn(\"Esperava um array vindo do nó SQLite, mas recebi outro formato.\");\n    return msg;\n}\n\n// Função auxiliar para converter ms → min:ss\nfunction formatDuration(ms) {\n    if (ms == null) return null;\n    let totalSeconds = Math.floor(ms / 1000);\n    let minutes = Math.floor(totalSeconds / 60);\n    let seconds = totalSeconds % 60;\n    return `${minutes}:${seconds.toString().padStart(2, '0')}`;\n}\n\n// Mapeia todas as linhas, adicionando a duração formatada\nmsg.payload = msg.payload.map(row => ({\n    ...row,\n    duration: formatDuration(row.duration_ms)\n}));\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -1757,8 +1731,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2700,
-        "y": 280,
+        "x": 1330,
+        "y": 140,
         "wires": [
             [
                 "99c4b2719f37348d"

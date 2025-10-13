@@ -10,7 +10,7 @@
     {
         "id": "bfc880c45abbde98",
         "type": "sqlitedb",
-        "db": "C:\\Users\\migue\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
+        "db": "C:\\Users\\miguelareal\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
         "mode": "RO"
     },
     {
@@ -55,7 +55,7 @@
     {
         "id": "53d75b9b07c94b8c",
         "type": "ui-page",
-        "name": "Popularidade de artistas e álbums",
+        "name": "Popularidade de artistas e álbuns",
         "ui": "016c25323c6a9ebe",
         "path": "/page2",
         "icon": "home",
@@ -85,8 +85,8 @@
         ],
         "order": 2,
         "className": "",
-        "visible": true,
-        "disabled": false
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "bb3ec38dd8362023",
@@ -380,7 +380,7 @@
         "id": "1f68a7ba36e22b2d",
         "type": "inject",
         "z": "bf283ad4cf60086f",
-        "name": "Default Dropdown",
+        "name": "SetDefaultDropdown",
         "props": [
             {
                 "p": "payload"
@@ -393,7 +393,7 @@
         "topic": "",
         "payload": "artistas",
         "payloadType": "str",
-        "x": 210,
+        "x": 220,
         "y": 380,
         "wires": [
             [
@@ -522,7 +522,7 @@
         "id": "c7161e08edbd3021",
         "type": "change",
         "z": "bf283ad4cf60086f",
-        "name": "",
+        "name": "SetFlowQueries",
         "rules": [
             {
                 "t": "set",
@@ -537,7 +537,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
+        "x": 420,
         "y": 440,
         "wires": [
             [
@@ -998,7 +998,7 @@
         "id": "1a3f135b63f1b094",
         "type": "inject",
         "z": "bf283ad4cf60086f",
-        "name": "Update Automático",
+        "name": "UpdateAutomático",
         "props": [],
         "repeat": "60",
         "crontab": "",
@@ -1020,8 +1020,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "fixed",
         "sql": "select id, name, followers,image_url from artists\norder by name asc;",
-        "name": "Todos os artistas",
-        "x": 850,
+        "name": "GetAllArtists",
+        "x": 830,
         "y": 280,
         "wires": [
             [
@@ -1035,7 +1035,7 @@
         "type": "ui-table",
         "z": "bf283ad4cf60086f",
         "group": "d6b9849b1523bbd4",
-        "name": "Todos os artistas",
+        "name": "AllArtists",
         "label": "Artistas",
         "order": 1,
         "width": "0",
@@ -1068,7 +1068,7 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 1130,
+        "x": 980,
         "y": 280,
         "wires": [
             [
@@ -1089,7 +1089,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1380,
+        "x": 1180,
         "y": 280,
         "wires": [
             [
@@ -1104,8 +1104,8 @@
         "mydb": "bfc880c45abbde98",
         "sqlquery": "msg.topic",
         "sql": "select id, name, followers from artists\norder by name asc;",
-        "name": "Albums de artista",
-        "x": 1630,
+        "name": "GetAlbumArtists",
+        "x": 1380,
         "y": 280,
         "wires": [
             [
@@ -1119,7 +1119,7 @@
         "type": "ui-table",
         "z": "bf283ad4cf60086f",
         "group": "ab0f4d3228b4e7a1",
-        "name": "Todos os albuns",
+        "name": "AllAlbums",
         "label": "Álbuns",
         "order": 1,
         "width": "0",
@@ -1152,7 +1152,7 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 1980,
+        "x": 1540,
         "y": 280,
         "wires": [
             [
@@ -1168,7 +1168,7 @@
         "group": "d6b9849b1523bbd4",
         "page": "",
         "ui": "",
-        "name": "Imagem de artista",
+        "name": "ArtistImg",
         "order": 2,
         "width": "4",
         "height": "6",
@@ -1179,7 +1179,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1370,
+        "x": 1140,
         "y": 320,
         "wires": [
             []
@@ -1203,7 +1203,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 2210,
+        "x": 1730,
         "y": 320,
         "wires": [
             []
@@ -1221,7 +1221,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2220,
+        "x": 1740,
         "y": 280,
         "wires": [
             [
@@ -1234,7 +1234,7 @@
         "type": "ui-table",
         "z": "bf283ad4cf60086f",
         "group": "a4bf936feb75172a",
-        "name": "Todas as músicas",
+        "name": "AllTracks",
         "label": "Músicas do Álbum",
         "order": 1,
         "width": "0",
@@ -1267,8 +1267,8 @@
         "mobileBreakpointType": "defaults",
         "action": "replace",
         "className": "",
-        "x": 2950,
-        "y": 280,
+        "x": 1540,
+        "y": 140,
         "wires": [
             [
                 "4e9c0f88c20e9b34"
@@ -1293,8 +1293,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 3440,
-        "y": 280,
+        "x": 1900,
+        "y": 140,
         "wires": [
             []
         ]
@@ -1311,8 +1311,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 3190,
-        "y": 280,
+        "x": 1710,
+        "y": 140,
         "wires": [
             [
                 "d36bc7993714d5bf"
@@ -1327,12 +1327,11 @@
         "sqlquery": "msg.topic",
         "sql": "select id, name, followers from artists\norder by name asc;",
         "name": "Músicas de álbum",
-        "x": 2450,
+        "x": 1950,
         "y": 280,
         "wires": [
             [
-                "ee87031807dc6d39",
-                "084fb0173eb18c52"
+                "ee87031807dc6d39"
             ]
         ],
         "icon": "node-red/db.svg"
@@ -1758,29 +1757,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2700,
-        "y": 280,
+        "x": 1360,
+        "y": 140,
         "wires": [
             [
                 "99c4b2719f37348d"
             ]
         ]
-    },
-    {
-        "id": "084fb0173eb18c52",
-        "type": "debug",
-        "z": "bf283ad4cf60086f",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2740,
-        "y": 400,
-        "wires": []
     }
 ]
