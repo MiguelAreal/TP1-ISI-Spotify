@@ -10,7 +10,7 @@
     {
         "id": "bfc880c45abbde98",
         "type": "sqlitedb",
-        "db": "C:\\Users\\areal\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
+        "db": "C:\\Users\\Areal\\Documents\\GitHub\\TP1-ISI-Spotify\\data\\output\\TP1-ISI-Spotify.db",
         "mode": "RO"
     },
     {
@@ -457,47 +457,6 @@
         ]
     },
     {
-        "id": "39233bef12e4151d",
-        "type": "ui-dropdown",
-        "z": "bf283ad4cf60086f",
-        "group": "bb3ec38dd8362023",
-        "name": "DropdownArtistasAlbuns",
-        "label": "Filtros",
-        "tooltip": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "multiple": false,
-        "chips": false,
-        "clearable": false,
-        "options": [
-            {
-                "label": "Artistas",
-                "value": "artistas",
-                "type": "str"
-            },
-            {
-                "label": "Álbums",
-                "value": "albuns",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "typeIsComboBox": false,
-        "msgTrigger": "onChange",
-        "x": 870,
-        "y": 500,
-        "wires": [
-            [
-                "e29af8a1174c7db8"
-            ]
-        ]
-    },
-    {
         "id": "e29af8a1174c7db8",
         "type": "function",
         "z": "bf283ad4cf60086f",
@@ -540,12 +499,12 @@
         "y": 440,
         "wires": [
             [
-                "39233bef12e4151d",
                 "d672038945b865c2",
                 "5c89b1c602ae797e",
                 "0a8476ece5f1a790",
                 "dbc4072cbda469e6",
-                "49672c95bc1906b9"
+                "49672c95bc1906b9",
+                "39233bef12e4151d"
             ]
         ]
     },
@@ -645,7 +604,7 @@
         "sqlquery": "msg.topic",
         "sql": "SELECT g.genre,\nROUND(AVG(t.popularity),2) as avg_popularity\nFROM tracks t JOIN\nalbums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre\nORDER BY AVG(t.popularity) DESC\nLIMIT 10",
         "name": "AvgGeneroPopularidade",
-        "x": 1470,
+        "x": 1650,
         "y": 860,
         "wires": [
             [
@@ -710,7 +669,7 @@
         "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 1760,
+        "x": 1940,
         "y": 860,
         "wires": [
             []
@@ -772,7 +731,7 @@
         "height": "6",
         "className": "",
         "interpolation": "linear",
-        "x": 1860,
+        "x": 2040,
         "y": 920,
         "wires": [
             []
@@ -784,7 +743,7 @@
         "z": "bf283ad4cf60086f",
         "mydb": "bfc880c45abbde98",
         "sqlquery": "fixed",
-        "sql": "SELECT DISTINCT genre FROM artist_genres ORDER BY genre;",
+        "sql": "SELECT DISTINCT genre as label ,genre as value\nFROM artist_genres ORDER BY genre;",
         "name": "GetGeneros",
         "x": 810,
         "y": 880,
@@ -806,24 +765,18 @@
         "order": 1,
         "width": "2",
         "height": "1",
-        "passthru": false,
+        "passthru": true,
         "multiple": true,
         "chips": false,
         "clearable": true,
-        "options": [
-            {
-                "label": "",
-                "value": "",
-                "type": "str"
-            }
-        ],
+        "options": [],
         "payload": "",
-        "topic": "topic",
+        "topic": "options",
         "topicType": "msg",
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onChange",
-        "x": 1030,
+        "x": 1230,
         "y": 880,
         "wires": [
             [
@@ -844,7 +797,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1420,
         "y": 920,
         "wires": [
             [
@@ -877,7 +830,7 @@
         "sqlquery": "msg.topic",
         "sql": "SELECT \n  g.genre, \n  strftime('%Y-%m', a.release_date) AS release_month,\n  ROUND(AVG(t.popularity), 2) AS avg_popularity\nFROM tracks t\nJOIN albums a ON t.album_id = a.id\nJOIN artists ar ON a.artist_id = ar.id\nJOIN artist_genres g ON ar.id = g.id\nWHERE t.popularity IS NOT NULL\nGROUP BY g.genre, release_month\nORDER BY release_month;",
         "name": "AvgGeneroPopularidadeTemporal",
-        "x": 1500,
+        "x": 1680,
         "y": 920,
         "wires": [
             [
@@ -1691,7 +1644,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
+        "x": 1420,
         "y": 860,
         "wires": [
             [
@@ -1716,6 +1669,47 @@
         "wires": [
             [
                 "99c4b2719f37348d"
+            ]
+        ]
+    },
+    {
+        "id": "39233bef12e4151d",
+        "type": "ui-dropdown",
+        "z": "bf283ad4cf60086f",
+        "group": "bb3ec38dd8362023",
+        "name": "DropdownArtistasAlbuns",
+        "label": "Filtros",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Artistas",
+                "value": "artistas",
+                "type": "str"
+            },
+            {
+                "label": "Álbums",
+                "value": "albuns",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": false,
+        "msgTrigger": "onChange",
+        "x": 870,
+        "y": 500,
+        "wires": [
+            [
+                "e29af8a1174c7db8"
             ]
         ]
     }
