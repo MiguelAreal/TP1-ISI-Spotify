@@ -37,15 +37,25 @@ Por fim, são gerados relatórios em CSV e enviadas notificações automáticas 
 ## Estrutura do Projeto
 
 📁 data/
+
 ┣ 📂 input/ # Dataset original (spotify_songs.csv)
+
 ┣ 📂 output/ # Ficheiros resultantes (CSV, BD)
+
 ┣ 📂 keys/ # Ficheiros de chaves (spotify_keys.json)
+
 📁 knime/
+
 ┗ 📄 TP1-ISI-Spotify.knwf # Workflow principal do KNIME
+
 📁 node_red/
+
 ┗ 📄 flows.json # Dashboard Node-RED
+
 📁 database/
+
 ┗ 📄 spotify.db # Base de dados SQLite
+
 📄 README.md
 
 ## Processos ETL Desenvolvidos
@@ -80,7 +90,10 @@ Por fim, são gerados relatórios em CSV e enviadas notificações automáticas 
 ## Autor
 
 **Nome:** Miguel Areal - 29559
+
 **Curso:** Licenciatura em Engenharia de Sistemas Informáticos (Pós-Laboral)
+
 **Unidade Curricular:** Integração de Sistemas de Informação  
+
 **Ano Letivo:** 2025/2026  
 
