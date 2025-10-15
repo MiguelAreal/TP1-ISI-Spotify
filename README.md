@@ -22,6 +22,14 @@ Por fim, são gerados relatórios em CSV e enviadas notificações automáticas 
 
 ---
 
+## Instruções
+
+1. Criar conta de desenvolvedor no Spotify.
+2. Criar aplicação e extraír client_id e client_secret.
+3. Criar data/keys/spotify_json com esses dados.
+4. Alterar caminho de variáveis dentro do KNIME
+---
+
 ## Tecnologias Utilizadas
 
 | Componente | Descrição |
